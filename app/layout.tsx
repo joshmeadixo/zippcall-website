@@ -22,6 +22,25 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: "ZippCall - Affordable International Calls in Your Browser",
   description: "Make international calls directly from your browser with ZippCall. No downloads required, just affordable rates and crystal-clear quality.",
+  openGraph: {
+    title: "ZippCall - Affordable International Calls in Your Browser",
+    description: "Make international calls directly from your browser with ZippCall. No downloads required, just affordable rates and crystal-clear quality.",
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'ZippCall - Browser-based international calling',
+      }
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "ZippCall - Affordable International Calls in Your Browser",
+    description: "Make international calls directly from your browser with ZippCall. No downloads required, just affordable rates and crystal-clear quality.",
+    images: ['/images/og-image.jpg'],
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },
