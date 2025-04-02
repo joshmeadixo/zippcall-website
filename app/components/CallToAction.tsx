@@ -9,25 +9,18 @@ export default function CallToAction() {
             Ready to Make Affordable International Calls?
           </h2>
           <p className="text-lg text-zippcall-light-blue mb-8 max-w-3xl mx-auto">
-            Join thousands of users already enjoying crystal-clear international calling directly from their browser. 
-            Get started today with $5 in free credit.
+            Join thousands of users already enjoying crystal-clear international calling directly from their browser.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex justify-center">
             <Link 
-              href="/signup" 
-              className="btn bg-zippcall-yellow text-zippcall-blue hover:bg-zippcall-yellow/80 text-lg px-8 py-4"
+              href="https://app.zippcall.com" 
+              className="flex items-center justify-center bg-zippcall-yellow text-zippcall-blue hover:bg-zippcall-yellow/80 text-lg font-medium px-8 h-14 rounded-md"
             >
-              Start Your Free Trial
-            </Link>
-            <Link 
-              href="#how-it-works" 
-              className="btn btn-outline border-white text-white hover:bg-white hover:text-zippcall-blue text-lg px-8 py-4"
-            >
-              Learn More
+              Start Calling Now
             </Link>
           </div>
           <p className="mt-6 text-zippcall-light-blue">
-            No credit card required. Cancel anytime.
+            1 minute setup. No subscription required.
           </p>
         </div>
       </div>

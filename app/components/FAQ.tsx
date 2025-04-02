@@ -42,11 +42,23 @@ export default function FAQ() {
     },
     {
       question: "How much does it cost to use ZippCall?",
-      answer: "ZippCall offers pay-as-you-go pricing with no monthly fees or subscriptions. Rates vary by country, starting as low as $0.01 per minute. We provide transparent pricing for all countries, and you only pay for what you use."
+      answer: "ZippCall offers pay-as-you-go pricing with no monthly fees or subscriptions. Rates vary by country, starting as low as $0.15 per minute. We provide transparent pricing for all countries, and you only pay for what you use."
     },
     {
       question: "Can I receive calls with ZippCall?",
-      answer: "Currently, ZippCall is designed for outbound calling only. You can make calls to any regular phone number worldwide, but you cannot receive incoming calls. We're working on adding this feature in the future."
+      answer: "Currently, ZippCall is designed for outbound calling only. You can make calls to any regular phone number worldwide, but you cannot receive incoming calls."
+    },
+    {
+      question: "Why can't I just use WhatsApp or Telegram for free?",
+      answer: "Messaging services like WhatsApp and Telegram allow free calls between users on platform but it doesn't allow you to call landlines or mobile numbers."
+    },
+    {
+      question: "Is there a monthly subscription fee?",
+      answer: "No, ZippCall is entirely pay-as-you-go. There are no monthly fees, no contracts, and no minimum usage requirements. You only pay for the call time you actually use."
+    },
+    {
+      question: "How do I add credits to my account?",
+      answer: "You can buy calling time through a secure payment processor in your account. We accept all major credit and debit cards as well as PayPal."
     },
     {
       question: "What devices can I use with ZippCall?",
@@ -84,7 +96,7 @@ export default function FAQ() {
 
         <div className="mt-12 text-center">
           <p className="text-zippcall-neutral mb-6">
-            Still have questions? We're here to help.
+            Still have questions?
           </p>
           <button className="btn bg-zippcall-blue text-white hover:bg-zippcall-blue/80">
             Contact Support
