@@ -13,14 +13,14 @@ import SkypeNotification from './components/SkypeNotification';
 import Script from 'next/script';
 
 // --- Dynamically import components that are likely below the fold ---
-const HowItWorks = dynamic(() => import('./components/HowItWorks'), { ssr: false, loading: () => <p>Loading...</p> });
-const Features = dynamic(() => import('./components/Features'), { ssr: false, loading: () => <p>Loading...</p> });
-const UseCases = dynamic(() => import('./components/UseCases'), { ssr: false, loading: () => <p>Loading...</p> });
-const Pricing = dynamic(() => import('./components/Pricing'), { ssr: false, loading: () => <p>Loading...</p> });
-const FounderNote = dynamic(() => import('./components/FounderNote'), { ssr: false, loading: () => <p>Loading...</p> });
-const FAQ = dynamic(() => import('./components/FAQ'), { ssr: false, loading: () => <p>Loading...</p> });
-const CallToAction = dynamic(() => import('./components/CallToAction'), { ssr: false, loading: () => <p>Loading...</p> });
-const BackToTop = dynamic(() => import('./components/BackToTop'), { ssr: false, loading: () => <p>Loading...</p> });
+const HowItWorks = dynamic(() => import('./components/HowItWorks'), { loading: () => <p>Loading...</p> });
+const Features = dynamic(() => import('./components/Features'), { loading: () => <p>Loading...</p> });
+const UseCases = dynamic(() => import('./components/UseCases'), { loading: () => <p>Loading...</p> });
+const Pricing = dynamic(() => import('./components/Pricing'), { loading: () => <p>Loading...</p> });
+const FounderNote = dynamic(() => import('./components/FounderNote'), { loading: () => <p>Loading...</p> });
+const FAQ = dynamic(() => import('./components/FAQ'), { loading: () => <p>Loading...</p> });
+const CallToAction = dynamic(() => import('./components/CallToAction'), { loading: () => <p>Loading...</p> });
+const BackToTop = dynamic(() => import('./components/BackToTop'), { loading: () => <p>Loading...</p> });
 // const Testimonials = dynamic(() => import('./components/Testimonials')); // Keep Testimonials commented out
 
 // --- Homepage Schema Markup ---
