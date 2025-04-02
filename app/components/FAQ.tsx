@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import { useContactForm } from './ContactFormContext';
 
 interface FAQItemProps {
   question: string;
@@ -30,6 +31,7 @@ function FAQItem({ question, answer, isOpen, toggleOpen }: FAQItemProps) {
 
 export default function FAQ() {
   const [openItem, setOpenItem] = useState(0);
+  const { openContactForm } = useContactForm();
   
   const faqItems = [
     {
@@ -98,7 +100,13 @@ export default function FAQ() {
           <p className="text-zippcall-neutral mb-6">
             Still have questions?
           </p>
-          <button className="btn bg-zippcall-blue text-white hover:bg-zippcall-blue/80">
+          <button 
+            className="px-6 py-3 bg-zippcall-blue text-white rounded-md hover:bg-zippcall-blue/80"
+            onClick={() => {
+              console.log("Contact button clicked from FAQ");
+              openContactForm();
+            }}
+          >
             Contact Support
           </button>
         </div>

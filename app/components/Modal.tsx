@@ -15,6 +15,11 @@ interface ModalProps {
 export default function Modal({ isOpen, onClose, title, children }: ModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
 
+  // Add debugging
+  useEffect(() => {
+    console.log("Modal isOpen:", isOpen);
+  }, [isOpen]);
+
   // Close modal when clicking outside
   useEffect(() => {
     if (!isOpen) return;

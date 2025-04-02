@@ -3,9 +3,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLegalModals } from './ModalLegalPage';
+import { useContactForm } from './ContactFormContext';
 
 export default function Footer() {
   const { openPrivacyPolicy, openTermsOfService, openLegalInfo } = useLegalModals();
+  const { openContactForm } = useContactForm();
 
   const handlePrivacyClick = () => {
     console.log("Privacy policy button clicked");
@@ -20,6 +22,11 @@ export default function Footer() {
   const handleLegalClick = () => {
     console.log("Legal button clicked");
     openLegalInfo();
+  };
+
+  const handleContactClick = () => {
+    console.log("Contact button clicked");
+    openContactForm();
   };
 
   return (
@@ -47,6 +54,12 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} ZippCall. All rights reserved.
           </p>
           <div className="flex space-x-6">
+            <button 
+              onClick={handleContactClick}
+              className="text-sm text-gray-400 hover:text-white transition-colors"
+            >
+              Contact Us
+            </button>
             <button 
               onClick={handlePrivacyClick}
               className="text-sm text-gray-400 hover:text-white transition-colors"

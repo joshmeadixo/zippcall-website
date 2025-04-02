@@ -6,6 +6,7 @@ import Script from "next/script";
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { LegalModalsProvider } from './components/ModalLegalPage';
+import { ContactFormProvider } from './components/ContactFormContext';
 
 // Use Inter as our main font
 const inter = Inter({ 
@@ -50,13 +51,15 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
       </head>
       <body className={`${inter.className} ${caveat.variable} font-sans`} suppressHydrationWarning>
-        <LegalModalsProvider>
-          <Header />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
-        </LegalModalsProvider>
+        <ContactFormProvider>
+          <LegalModalsProvider>
+            <Header />
+            <main className="flex-grow">
+              {children}
+            </main>
+            <Footer />
+          </LegalModalsProvider>
+        </ContactFormProvider>
         <Script id="handle-back-navigation" strategy="afterInteractive">
           {`
             window.addEventListener('pageshow', function(event) {
