@@ -13,6 +13,9 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+// Define the base URL before it's used in metadata
+const websiteUrl = 'https://www.zippcall.com'; // <-- Replace with your actual production URL
+
 // Use Caveat as our handwriting font
 const caveat = Caveat({
   subsets: ["latin"],
@@ -20,6 +23,7 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(websiteUrl),
   title: "ZippCall - Affordable International Calls in Your Browser",
   description: "Make international calls directly from your browser with ZippCall. No downloads required, just affordable rates and crystal-clear quality.",
   openGraph: {
@@ -58,6 +62,30 @@ export const metadata: Metadata = {
   manifest: '/icons/site.webmanifest',
 };
 
+// --- Schema Markup Definition ---
+// Assuming the main website URL - replace if necessary
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'ZippCall',
+  url: websiteUrl,
+  logo: `${websiteUrl}/icons/android-chrome-512x512.png`, // Using an existing icon
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'ZippCall',
+  url: websiteUrl,
+  // Optional: Add potentialAction for Sitelinks Search Box if you have site search
+  // potentialAction: {
+  //   '@type': 'SearchAction',
+  //   target: `${websiteUrl}/search?q={search_term_string}`,
+  //   'query-input': 'required name=search_term_string',
+  // },
+};
+// --- End Schema Markup Definition ---
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -68,6 +96,16 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+        {/* Add JSON-LD Schema Markup */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
       </head>
       <body className={`${inter.className} ${caveat.variable} font-sans`} suppressHydrationWarning>
         <ContactFormProvider>
