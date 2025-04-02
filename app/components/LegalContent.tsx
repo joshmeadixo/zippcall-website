@@ -1,23 +1,23 @@
 export default function LegalContent() {
   return (
     <div className="prose prose-lg max-w-none">
-      <p className="text-sm text-gray-500 mb-8">Last Updated: May 5, 2024</p>
+      <p className="text-sm text-gray-500 mb-8">Last Updated: April 2, 2025</p>
       
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-zippcall-blue mb-4">1. Company Information</h2>
         <div className="pl-4 space-y-4">
           <p>
-            ZippCall is operated by ZippCall Ltd, a company registered in England and Wales.
+            ZippCall is operated by Josh Mead (trading as ZippCall).
           </p>
           <div className="bg-zippcall-cream p-4 rounded-lg border border-zippcall-light-blue/20">
             <p className="mb-1">
-              <span className="font-medium">Registration Number:</span> 12345678
+              <span className="font-medium">Registration Number:</span> N/A
             </p>
             <p className="mb-1">
-              <span className="font-medium">Registered Office:</span> 123 High Street, London, EC1V 1AB, United Kingdom
+              <span className="font-medium">Registered Office:</span> Church View, Devon, UK.
             </p>
             <p>
-              <span className="font-medium">VAT Registration Number:</span> GB123456789
+              <span className="font-medium">VAT Registration Number: N/A</span>
             </p>
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function LegalContent() {
         <h2 className="text-2xl font-bold text-zippcall-blue mb-4">5. Trademark Notice</h2>
         <div className="pl-4 space-y-4">
           <p>
-            "ZippCall" and the ZippCall logo are trademarks of ZippCall Ltd. All other trademarks, service marks, and logos used on the ZippCall website and application are the property of their respective owners.
+            "ZippCall" and the ZippCall logo are trademarks of Josh Mead. All other trademarks, service marks, and logos used on the ZippCall website and application are the property of their respective owners.
           </p>
           <p>
             No trademark license is granted in connection with the materials contained on the ZippCall website and application. Access to the ZippCall website and application does not authorize anyone to use any name, logo, or trademark in any manner.
@@ -115,7 +115,7 @@ export default function LegalContent() {
         <h2 className="text-2xl font-bold text-zippcall-blue mb-4">7. Dispute Resolution</h2>
         <div className="pl-4 space-y-4">
           <p>
-            If you have a complaint or dispute regarding our services, please contact our customer support team at <a href="mailto:support@zippcall.com" className="text-zippcall-blue">support@zippcall.com</a>. We aim to acknowledge all complaints within 2 business days and provide a resolution within 14 days.
+            If you have a complaint or dispute regarding our services, please use the contact form on our website. We aim to acknowledge all complaints within 2 business days and provide a resolution within 14 days.
           </p>
           <p>
             If we are unable to resolve your complaint to your satisfaction, you may be eligible to refer your complaint to the relevant telecommunication regulatory authority in your jurisdiction or to use alternative dispute resolution services.
@@ -153,14 +153,11 @@ export default function LegalContent() {
         <h2 className="text-2xl font-bold text-zippcall-blue mb-4">10. Contact Information</h2>
         <div className="pl-4 space-y-4">
           <p>
-            If you have any questions or concerns about this Legal Information, please contact us at:
+            If you have any questions or concerns about this Legal Information, please use the contact form on our website.
           </p>
           <div className="bg-zippcall-cream p-4 rounded-lg border border-zippcall-light-blue/20">
-            <p className="mb-1">
-              <span className="font-medium">Email:</span> <a href="mailto:legal@zippcall.com" className="text-zippcall-blue">legal@zippcall.com</a>
-            </p>
             <p>
-              <span className="font-medium">Postal Address:</span> 123 High Street, London, EC1V 1AB, United Kingdom
+              <span className="font-medium">Postal Address:</span> Church View, Devon, UK.
             </p>
           </div>
         </div>
