@@ -106,6 +106,14 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
+
+        {/* Plausible Analytics Script */}
+        <Script 
+          defer 
+          data-domain="zippcall.com" 
+          src="https://plausible.io/js/script.hash.outbound-links.js"
+          strategy="afterInteractive" // Loads after the page is interactive
+        />
       </head>
       <body className={`${inter.className} ${caveat.variable} font-sans`} suppressHydrationWarning>
         <ContactFormProvider>
