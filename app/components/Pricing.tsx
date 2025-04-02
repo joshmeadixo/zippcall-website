@@ -222,18 +222,18 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-lg border border-zippcall-light-blue/20 overflow-hidden max-w-4xl mx-auto p-8">
+        <div className="bg-white rounded-lg shadow-lg border border-zippcall-light-blue/20 overflow-visible max-w-4xl mx-auto p-8">
           <h3 className="text-2xl font-bold text-zippcall-blue mb-6 text-center">Estimate Your Call Cost</h3>
           <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 relative">
               <label htmlFor="country-select-btn" className="block text-sm font-medium text-zippcall-neutral mb-1">Select Country:</label>
-              <div className="dropdown w-full" ref={dropdownRef}>
+              <div className="dropdown w-full static" ref={dropdownRef}>
                 <button tabIndex={0} id="country-select-btn" className="btn btn-outline border-zippcall-light-blue/30 text-zippcall-blue bg-white w-full justify-start font-normal hover:border-zippcall-blue/40">
                   {currentSelectedCountry?.flag && <span className="mr-2 text-lg">{currentSelectedCountry.flag}</span>}
                   {currentSelectedCountry?.name || "Select Country..."}
                   <span className="ml-auto">▼</span>
                 </button>
-                <ul tabIndex={0} className="dropdown-content z-[20] menu p-0 shadow bg-base-100 rounded-box w-full mt-1 max-h-60 overflow-y-auto flex-nowrap">
+                <ul tabIndex={0} className="dropdown-content z-[999] menu p-0 shadow bg-base-100 rounded-box w-full mt-1 max-h-[300px] overflow-y-auto flex-nowrap absolute">
                   <li className="sticky top-0 z-10 bg-base-100 px-2 pt-2 pb-1 border-b border-base-200">
                     <input
                       type="text"
@@ -241,6 +241,7 @@ export default function Pricing() {
                       className="input input-bordered input-sm w-full"
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
+                      onClick={(e) => e.stopPropagation()}
                     />
                   </li>
                   <div className="p-2">

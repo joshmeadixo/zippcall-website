@@ -14,6 +14,9 @@ module.exports = {
         'zippcall-cream': '#FFF8E1',
         'zippcall-neutral': '#2A303C',
       },
+      fontFamily: {
+        'caveat': ['var(--font-caveat)', 'cursive', 'sans-serif'],
+      },
     },
   },
   plugins: [require("daisyui")],

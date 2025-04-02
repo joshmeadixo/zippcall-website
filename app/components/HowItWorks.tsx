@@ -5,10 +5,21 @@ import Link from 'next/link';
 
 export default function HowItWorks() {
   const [callTarget, setCallTarget] = useState("Your Bank");
-  const callTargets = ["Your Bank", "Your Mum", "Your Boss", "Your Friend", "Your Granny"];
+  const callTargets = ["Your Bank", "Your Mom", "Your Boss", "Your Friend", "Your Family", "Your Client", "Your Doctor", "Your Hotel", "Airlines", "Tech Support", "Colleagues"];
   
   // Mobile-friendly shorter alternatives
-  const isMobile = typeof window !== 'undefined' && window.innerWidth < 640;
+  const [isMobile, setIsMobile] = useState(false);
+  
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 640);
+    
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {

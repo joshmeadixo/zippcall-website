@@ -9,11 +9,13 @@ import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import UseCases from './components/UseCases';
 import FounderNote from './components/FounderNote';
+import SkypeNotification from './components/SkypeNotification';
 
 export default function Home() {
   return (
     <main>
       <Header />
+      <SkypeNotification />
       <Hero />
       <HowItWorks />
       <Features />

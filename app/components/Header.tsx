@@ -43,6 +43,7 @@ export default function Header() {
                 src="/images/zippcall-icon.png"
                 alt="ZippCall Icon"
                 fill
+                sizes="(max-width: 768px) 48px, 48px"
                 className="object-contain object-center"
                 priority
               />
