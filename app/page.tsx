@@ -1,15 +1,27 @@
+import dynamic from 'next/dynamic'; // Import dynamic
 import Hero from './components/Hero';
-import Features from './components/Features';
-import HowItWorks from './components/HowItWorks';
-import Pricing from './components/Pricing';
-import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
-import CallToAction from './components/CallToAction';
-import UseCases from './components/UseCases';
-import FounderNote from './components/FounderNote';
+// import Features from './components/Features'; // Remove static imports for lazy-loaded components
+// import HowItWorks from './components/HowItWorks';
+// import Pricing from './components/Pricing';
+// import Testimonials from './components/Testimonials'; // Keep commented out
+// import FAQ from './components/FAQ';
+// import CallToAction from './components/CallToAction';
+// import UseCases from './components/UseCases';
+// import FounderNote from './components/FounderNote';
 import SkypeNotification from './components/SkypeNotification';
-import BackToTop from './components/BackToTop';
+// import BackToTop from './components/BackToTop';
 import Script from 'next/script';
+
+// --- Dynamically import components that are likely below the fold ---
+const HowItWorks = dynamic(() => import('./components/HowItWorks'), { ssr: false, loading: () => <p>Loading...</p> });
+const Features = dynamic(() => import('./components/Features'), { ssr: false, loading: () => <p>Loading...</p> });
+const UseCases = dynamic(() => import('./components/UseCases'), { ssr: false, loading: () => <p>Loading...</p> });
+const Pricing = dynamic(() => import('./components/Pricing'), { ssr: false, loading: () => <p>Loading...</p> });
+const FounderNote = dynamic(() => import('./components/FounderNote'), { ssr: false, loading: () => <p>Loading...</p> });
+const FAQ = dynamic(() => import('./components/FAQ'), { ssr: false, loading: () => <p>Loading...</p> });
+const CallToAction = dynamic(() => import('./components/CallToAction'), { ssr: false, loading: () => <p>Loading...</p> });
+const BackToTop = dynamic(() => import('./components/BackToTop'), { ssr: false, loading: () => <p>Loading...</p> });
+// const Testimonials = dynamic(() => import('./components/Testimonials')); // Keep Testimonials commented out
 
 // --- Homepage Schema Markup ---
 const websiteUrl = 'https://www.zippcall.com'; // Ensure this matches layout.tsx
@@ -155,9 +167,9 @@ export default function Home() {
 
       <SkypeNotification />
       <Hero />
+      {/* Use the dynamically loaded components */}
       <HowItWorks />
       <Features />
-      {/* Testimonials removed until we have genuine reviews */}
       {/* <Testimonials /> */}
       <UseCases />
       <Pricing />
