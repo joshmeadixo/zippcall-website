@@ -36,7 +36,8 @@ export async function POST(request: Request) {
     // Prepare the contact's name components
     const nameParts = data.name.split(' ');
     const firstName = nameParts[0];
-    const lastName = nameParts.length > 1 ? nameParts.slice(1).join(' ') : '';
+    // Ensure lastName is never empty - use the firstName as lastName if not provided
+    const lastName = nameParts.length > 1 ? nameParts.slice(1).join(' ') : firstName;
     
     // Log the submission regardless of whether we use Loops
     console.log('Contact form submission:', {
@@ -59,7 +60,7 @@ export async function POST(request: Request) {
           email: 'hi@joshmead.me', // Send to your support email
           dataVariables: {
             firstName: firstName,
-            lastName: lastName,
+            lastName: lastName, // This will never be empty now
             message: data.message,
             email: data.email,
             submitted_at: new Date().toISOString(),
@@ -73,7 +74,7 @@ export async function POST(request: Request) {
           email: data.email, // Send to the submitter's email
           dataVariables: {
             firstName: firstName,
-            lastName: lastName,
+            lastName: lastName, // This will never be empty now
             message: data.message
           }
         });
