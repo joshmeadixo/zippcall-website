@@ -54,12 +54,7 @@ export async function POST(request: Request) {
         // Initialize the Loops client
         const loops = new LoopsClient(LOOPS_API_KEY);
         
-        // First, create or update the contact in Loops
-        const contactResp = await loops.updateContact(data.email, {
-          firstName: firstName,
-          lastName: lastName,
-          source: 'website_contact_form',
-        });
+        // No longer adding contact to Loops audience - only sending transactional emails
         
         // Send a transactional email to notify the team about the support request
         await loops.sendTransactionalEmail({
@@ -74,17 +69,9 @@ export async function POST(request: Request) {
           }
         });
         
-        // Also send the support event with the message for tracking
-        await loops.sendEvent({
-          email: data.email,
-          eventName: 'support_request',
-          eventProperties: {
-            message: data.message,
-            submitted_at: new Date().toISOString(),
-          }
-        });
+        // Removed sendEvent call as it would also track the user in Loops
         
-        console.log('Successfully sent to Loops');
+        console.log('Successfully sent transactional emails via Loops');
       } catch (loopsError) {
         if (loopsError instanceof RateLimitExceededError) {
           console.error(`Rate limit exceeded (${loopsError.limit} per second)`);
