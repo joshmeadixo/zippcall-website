@@ -31,6 +31,9 @@ const staticPricingData = {
   ]
 };
 
+// Countries that Twilio doesn't support calling to
+const unsupportedCountries = ["China", "Iran"];
+
 // Comprehensive Country Code -> Flag Emoji Mapping
 const countryCodeToFlagMap: { [key: string]: string } = {
   AF: "🇦🇫", AD: "🇦🇩", AE: "🇦🇪", AG: "🇦🇬", AI: "🇦🇮", AL: "🇦🇱", AM: "🇦🇲", AO: "🇦🇴", AQ: "🇦🇶", AR: "🇦🇷", AS: "🇦🇸", AT: "🇦🇹", AU: "🇦🇺", AW: "🇦🇼", AX: "🇦🇽", AZ: "🇦🇿",
@@ -91,6 +94,7 @@ export default function Pricing() {
   const [minutes, setMinutes] = useState(10);
   const [currentRate, setCurrentRate] = useState<number | null>(null);
   const [calculatedCost, setCalculatedCost] = useState<string | null>(null);
+  const [isUnsupportedCountry, setIsUnsupportedCountry] = useState(false);
   
   const [allPricingData, setAllPricingData] = useState<Record<string, PricingDataEntry> | null>(null);
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -149,6 +153,14 @@ export default function Pricing() {
 
   // Update rate when country changes or allPricingData loads
   useEffect(() => {
+    // Check if the selected country is in the unsupported list
+    if (unsupportedCountries.includes(selectedCountryName)) {
+      setIsUnsupportedCountry(true);
+      setCurrentRate(null);
+      return;
+    }
+    
+    setIsUnsupportedCountry(false);
     let wholesaleRate: number | null = null;
     const selectedCountryCode = countryListForDropdown.find(c => c.name === selectedCountryName)?.code;
     if (allPricingData && selectedCountryCode) {
@@ -281,7 +293,12 @@ export default function Pricing() {
             {initialError && !isInitialLoading && (
               <div className="text-orange-600 font-medium text-sm">Error: {initialError}</div>
             )}
-            {!isInitialLoading && currentRate !== null && calculatedCost !== null && (
+            {!isInitialLoading && isUnsupportedCountry && (
+              <div className="text-orange-600 font-medium">
+                <p>ZippCall does not currently support calls to {selectedCountryName}, we are working to add this soon.</p>
+              </div>
+            )}
+            {!isInitialLoading && !isUnsupportedCountry && currentRate !== null && calculatedCost !== null && (
               <div>
                 {initialError && <p className="text-xs text-orange-500 mb-2">Could not load live rate, showing estimate.</p>}
                 <p className="text-lg text-zippcall-neutral">
@@ -292,7 +309,7 @@ export default function Pricing() {
                 </p>
               </div>
             )}
-            {!isInitialLoading && !initialError && currentRate === null && (
+            {!isInitialLoading && !isUnsupportedCountry && !initialError && currentRate === null && (
               <div className="text-zippcall-neutral">Rate not available for {selectedCountryName}.</div>
             )}
           </div>
