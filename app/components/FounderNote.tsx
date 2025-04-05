@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function FounderNote() {
   return (
-    <section id="founder-note" className="py-16 bg-zippcall-cream">
+    <section id="founder-note" className="py-16 bg-zippcall-cream relative">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8 md:p-12 border border-zippcall-light-blue/20">
           <div className="text-center mb-8">
@@ -32,17 +32,35 @@ export default function FounderNote() {
               <p className="text-sm text-zippcall-neutral mb-2">
                 Founder, ZippCall
               </p>
-              <Link 
-                href="https://x.com/JoshMead" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-flex items-center text-zippcall-blue hover:text-zippcall-light-blue transition-colors"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 mr-1">
-                  <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5549 21H20.7996L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z"/>
-                </svg>
-                <span>@JoshMead</span>
-              </Link>
+              <div className="flex items-center justify-center space-x-4">
+                <Link 
+                  href="https://x.com/JoshMead" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center text-zippcall-blue hover:text-zippcall-light-blue transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 mr-1">
+                    <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5549 21H20.7996L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z"/>
+                  </svg>
+                  <span>@JoshMead</span>
+                </Link>
+                <div className="h-4 w-px bg-zippcall-neutral/30"></div>
+                <a 
+                  href="https://www.producthunt.com/posts/zippcall?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-zippcall" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center relative group"
+                >
+                  <img 
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=949544&theme=light&t=1743815067332" 
+                    alt="ZippCall on Product Hunt" 
+                    className="h-7 w-auto transition-transform group-hover:scale-105" 
+                  />
+                  <span className="absolute -top-7 -right-4 bg-zippcall-yellow text-zippcall-blue text-xs font-bold px-2 py-1 rounded-md shadow-md transform rotate-3 group-hover:rotate-0 transition-all opacity-0 group-hover:opacity-100">
+                    Just launched!
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

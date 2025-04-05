@@ -3,7 +3,23 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-b from-zippcall-light-blue/10 to-white py-16 md:py-24">
+    <section className="bg-gradient-to-b from-zippcall-light-blue/10 to-white py-16 md:py-24 relative overflow-hidden">
+      {/* Mobile Product Hunt Badge */}
+      <div className="md:hidden absolute top-2 right-2 z-10">
+        <a 
+          href="https://www.producthunt.com/posts/zippcall?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-zippcall" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="block rotate-6 shadow-lg rounded-lg overflow-hidden hover:rotate-0 transition-all duration-300"
+        >
+          <img 
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=949544&theme=light&t=1743815067332" 
+            alt="ZippCall on Product Hunt" 
+            className="w-36 h-auto" 
+          />
+        </a>
+      </div>
+      
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-5/12 mb-10 md:mb-0 md:pr-8">
