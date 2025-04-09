@@ -1,0 +1,372 @@
+[
+  {
+    "id": "united-kingdom",
+    "name": "United Kingdom",
+    "code": "GB",
+    "dialCode": "+44",
+    "flag": "🇬🇧",
+    "continent": "Europe",
+    "languages": [
+      "English",
+      "Welsh",
+      "Scottish Gaelic",
+      "Irish"
+    ],
+    "timeZones": "GMT/BST (UTC+0/1)",
+    "description": "Make cheap calls to the United Kingdom with ZippCall. Stay connected with friends, family, and businesses across the UK at competitive rates without any app downloads. Enjoy crystal-clear connections to both mobile phones and landlines throughout England, Scotland, Wales, and Northern Ireland.",
+    "callTips": "The best time to call the United Kingdom is between 9am and 9pm UK time. Remember that the UK uses GMT in winter and BST (GMT+1) in summer, so adjust your calling time accordingly.",
+    "businessInfo": "The UK has a service-oriented economy with major sectors including financial services, technology, manufacturing, and healthcare. Standard business hours are typically 9am-5pm Monday through Friday, though many financial institutions in London operate on longer hours.",
+    "popularCities": [
+      {
+        "name": "London",
+        "description": "The capital and financial center of the UK, home to numerous multinational corporations, cultural institutions, and a diverse international population."
+      },
+      {
+        "name": "Manchester",
+        "description": "A major industrial and commercial hub known for its vibrant culture, music scene, and premier league football clubs."
+      },
+      {
+        "name": "Birmingham",
+        "description": "The UK's second-largest city and a major center for business, retail, and cultural activities."
+      },
+      {
+        "name": "Edinburgh",
+        "description": "Scotland's capital city, known for its historic architecture, festivals, and as an important financial and educational center."
+      },
+      {
+        "name": "Cardiff",
+        "description": "The capital of Wales and a major commercial center with growing importance in media, finance, and creative industries."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial a UK number correctly?",
+        "answer": "To call the UK, dial your country's exit code, then +44, followed by the area code (without the initial 0) and the local number. For example, to call a London number 020 1234 5678, you would dial +44 20 1234 5678."
+      },
+      {
+        "question": "Are there different rates for calling UK landlines versus mobile phones?",
+        "answer": "With ZippCall, we offer a single competitive rate for calling both landlines and mobile phones in the United Kingdom, making it simple to stay connected regardless of the number you're calling."
+      },
+      {
+        "question": "Can I call UK toll-free numbers using ZippCall?",
+        "answer": "Yes, you can call UK toll-free numbers (0800 or 0808) with ZippCall, though our standard international rates will apply rather than them being free."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to United Kingdom - Low-Cost UK Calling | ZippCall",
+      "description": "Make affordable calls to the United Kingdom from just $0.02/min with ZippCall. No downloads needed, call directly from your browser to any UK number.",
+      "keywords": [
+        "call UK",
+        "cheap UK calls",
+        "international calls United Kingdom",
+        "call Britain",
+        "call England"
+      ]
+    }
+  },
+  {
+    "id": "afghanistan",
+    "name": "Afghanistan",
+    "code": "AF",
+    "dialCode": "+93",
+    "flag": "🇦🇫",
+    "continent": "Asia",
+    "languages": [
+      "Dari",
+      "Pashto"
+    ],
+    "timeZones": "AFT (UTC+4:30)",
+    "description": "Make cheap calls to Afghanistan with ZippCall. Enjoy reliable connections to both landlines and mobiles across the country without the need for apps or downloads.",
+    "callTips": "The best time to call Afghanistan is between 9am and 6pm AFT. Consider the unique half-hour offset in time difference.",
+    "businessInfo": "Afghanistan’s business culture is traditional, with business hours typically from 8am to 4pm, Sunday to Thursday.",
+    "popularCities": [
+      {
+        "name": "Kabul",
+        "description": "The capital and largest city of Afghanistan, serving as the political and economic center of the country."
+      },
+      {
+        "name": "Herat",
+        "description": "A key trade and cultural hub near the Iranian border with a growing economy."
+      },
+      {
+        "name": "Kandahar",
+        "description": "An important regional city with significant agricultural and commercial activity."
+      },
+      {
+        "name": "Mazar-i-Sharif",
+        "description": "Known for its religious significance and as a center of trade in northern Afghanistan."
+      },
+      {
+        "name": "Jalalabad",
+        "description": "Strategically located city serving as a major economic link with Pakistan."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial an Afghan number correctly?",
+        "answer": "Dial your country's exit code, followed by +93, then the local number without the leading 0."
+      },
+      {
+        "question": "Are mobile calls to Afghanistan more expensive?",
+        "answer": "ZippCall offers competitive flat rates for both landline and mobile calls to Afghanistan."
+      },
+      {
+        "question": "Do I need an internet connection to call Afghanistan?",
+        "answer": "Yes, ZippCall operates via browser-based VoIP, so a stable internet connection is required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Afghanistan - Low-Cost Afghan Calling | ZippCall",
+      "description": "Make affordable calls to Afghanistan with ZippCall. Call directly from your browser with no apps or downloads required.",
+      "keywords": [
+        "call Afghanistan",
+        "cheap Afghanistan calls",
+        "international calls Afghanistan"
+      ]
+    }
+  },
+  {
+    "id": "albania",
+    "name": "Albania",
+    "code": "AL",
+    "dialCode": "+355",
+    "flag": "🇦🇱",
+    "continent": "Europe",
+    "languages": [
+      "Albanian"
+    ],
+    "timeZones": "CET/CEST (UTC+1/+2)",
+    "description": "Call Albania affordably with ZippCall. Connect to both landlines and mobile numbers in Tirana, Durrës, and beyond—no app downloads required.",
+    "callTips": "The best time to call Albania is between 9am and 9pm local time. Be mindful of the switch between CET and CEST for accurate scheduling.",
+    "businessInfo": "Albanian businesses typically operate Monday to Friday, from 8am to 4pm. Punctuality and formality are appreciated in business settings.",
+    "popularCities": [
+      {
+        "name": "Tirana",
+        "description": "The capital and largest city, Tirana is the political, economic, and cultural hub of Albania."
+      },
+      {
+        "name": "Durrës",
+        "description": "A major port city and one of the oldest in Albania, with a vibrant business and tourism sector."
+      },
+      {
+        "name": "Shkodër",
+        "description": "A historical city known for its culture, arts, and position near the Montenegro border."
+      },
+      {
+        "name": "Vlorë",
+        "description": "A coastal city important for trade, tourism, and its historical declaration of independence."
+      },
+      {
+        "name": "Elbasan",
+        "description": "A growing industrial city located in central Albania with historical significance."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Albania from abroad?",
+        "answer": "Dial your international exit code, then +355, followed by the local number without the starting 0."
+      },
+      {
+        "question": "Is there a difference in cost for calling mobiles vs landlines?",
+        "answer": "ZippCall offers a flat rate for both landline and mobile calls to Albania, making it easier to stay connected."
+      },
+      {
+        "question": "Can I use ZippCall to call Albania without downloading an app?",
+        "answer": "Yes, ZippCall is browser-based, so you can make calls directly online without any downloads."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Albania - Low-Cost Albanian Calling | ZippCall",
+      "description": "Call Albania online with ZippCall. No apps required, just cheap, clear calls directly from your browser.",
+      "keywords": [
+        "call Albania",
+        "cheap Albania calls",
+        "international calls Albania"
+      ]
+    }
+  },
+  {
+    "id": "algeria",
+    "name": "Algeria",
+    "code": "DZ",
+    "dialCode": "+213",
+    "flag": "🇩🇿",
+    "continent": "Africa",
+    "languages": [
+      "Arabic",
+      "Berber",
+      "French"
+    ],
+    "timeZones": "CET (UTC+1)",
+    "description": "ZippCall lets you make reliable calls to Algeria with low rates. Connect to Algerian mobiles and landlines instantly from your browser.",
+    "callTips": "Ideal calling hours for Algeria are 9am–6pm CET. Algeria does not observe daylight savings, so time difference stays constant.",
+    "businessInfo": "Algerian business culture values hierarchy and respect. Working hours are generally Sunday to Thursday, 8am–4pm.",
+    "popularCities": [
+      {
+        "name": "Algiers",
+        "description": "Algiers is the capital city and the main economic and political center of Algeria."
+      },
+      {
+        "name": "Oran",
+        "description": "A major port city with rich cultural heritage and growing commercial importance."
+      },
+      {
+        "name": "Constantine",
+        "description": "A historic city known for its bridges and strategic trade role in eastern Algeria."
+      },
+      {
+        "name": "Annaba",
+        "description": "An important industrial and port city with a rising tourism sector."
+      },
+      {
+        "name": "Blida",
+        "description": "A lush agricultural and university town southwest of Algiers."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How can I dial Algeria from my country?",
+        "answer": "Use your country’s exit code, followed by +213, then the Algerian number without leading 0."
+      },
+      {
+        "question": "Are ZippCall’s rates to Algeria competitive?",
+        "answer": "Yes, ZippCall offers affordable, flat rates to both mobile and landline numbers in Algeria."
+      },
+      {
+        "question": "Do I need special software to call Algeria?",
+        "answer": "No, ZippCall works through your browser with no downloads required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Algeria - Affordable Algerian Calling | ZippCall",
+      "description": "Make low-cost calls to Algeria with ZippCall. Call directly from your browser—no installation needed.",
+      "keywords": [
+        "call Algeria",
+        "cheap Algeria calls",
+        "international calls Algeria"
+      ]
+    }
+  },
+  {
+    "id": "american-samoa",
+    "name": "American Samoa",
+    "code": "AS",
+    "dialCode": "+1-684",
+    "flag": "🇦🇸",
+    "continent": "Oceania",
+    "languages": [
+      "English",
+      "Samoan"
+    ],
+    "timeZones": "SST (UTC−11)",
+    "description": "Call American Samoa with ZippCall and enjoy reliable international connections from anywhere. No apps or downloads required—just your browser.",
+    "callTips": "With a time zone of UTC−11, plan calls during local working hours (8am–5pm) to avoid late-night interruptions.",
+    "businessInfo": "Business in American Samoa generally follows U.S. standards, operating Monday to Friday, 8am–5pm.",
+    "popularCities": [
+      {
+        "name": "Pago Pago",
+        "description": "The capital and main port of American Samoa, a central hub for government and commerce."
+      },
+      {
+        "name": "Tafuna",
+        "description": "One of the most populated areas, home to the main airport and business centers."
+      },
+      {
+        "name": "Leone",
+        "description": "A key residential and historical area on the southwest coast of Tutuila Island."
+      },
+      {
+        "name": "Faga'alu",
+        "description": "A village near Pago Pago with healthcare and administrative institutions."
+      },
+      {
+        "name": "Aua",
+        "description": "A coastal village known for its scenic harbor views and local commerce."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial American Samoa?",
+        "answer": "Dial +1-684 followed by the seven-digit local number, as it’s part of the U.S. phone system."
+      },
+      {
+        "question": "Is calling American Samoa like calling the U.S.?",
+        "answer": "ZippCall treats American Samoa as a unique destination but offers similar easy connection features."
+      },
+      {
+        "question": "What’s needed to call American Samoa?",
+        "answer": "All you need is a browser and internet—ZippCall requires no downloads or installations."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to American Samoa | ZippCall Browser Calling",
+      "description": "Make low-cost browser calls to American Samoa with ZippCall. Easy, no-app calling to mobiles and landlines.",
+      "keywords": [
+        "call American Samoa",
+        "cheap American Samoa calls",
+        "international calls American Samoa"
+      ]
+    }
+  },
+  {
+    "id": "andorra",
+    "name": "Andorra",
+    "code": "AD",
+    "dialCode": "+376",
+    "flag": "🇦🇩",
+    "continent": "Europe",
+    "languages": [
+      "Catalan",
+      "Spanish",
+      "French"
+    ],
+    "timeZones": "CET/CEST (UTC+1/+2)",
+    "description": "ZippCall makes calling Andorra simple and affordable. Enjoy crisp browser-based calls to both mobile and landline numbers.",
+    "callTips": "Best times to call Andorra are 9am to 8pm local time. Be mindful of CET in winter and CEST in summer.",
+    "businessInfo": "Andorran businesses operate Monday to Friday, typically from 9am to 5pm, with a focus on retail and tourism.",
+    "popularCities": [
+      {
+        "name": "Andorra la Vella",
+        "description": "The capital and largest city, a commercial and administrative hub nestled in the Pyrenees."
+      },
+      {
+        "name": "Escaldes-Engordany",
+        "description": "Known for its thermal baths and vibrant retail economy."
+      },
+      {
+        "name": "Encamp",
+        "description": "A major town with access to ski resorts and growing tourism sector."
+      },
+      {
+        "name": "La Massana",
+        "description": "A scenic town known for its mountain views and adventure sports."
+      },
+      {
+        "name": "Sant Julià de Lòria",
+        "description": "Located on the southern border with Spain, it plays a key role in commerce."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the correct way to call Andorra?",
+        "answer": "Dial your international exit code, then +376, followed by the local number."
+      },
+      {
+        "question": "Does ZippCall offer competitive rates to Andorra?",
+        "answer": "Yes, our rates to Andorra are affordable and consistent for both landline and mobile numbers."
+      },
+      {
+        "question": "Is internet needed to call Andorra?",
+        "answer": "Yes, ZippCall uses internet-based calling directly through your browser."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Andorra - Call from Your Browser | ZippCall",
+      "description": "Call Andorra easily with ZippCall. No downloads—just affordable browser calls to mobiles and landlines.",
+      "keywords": [
+        "call Andorra",
+        "cheap Andorra calls"
+      ]
+    }
+  }
+]
