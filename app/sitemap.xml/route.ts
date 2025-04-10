@@ -39,334 +39,326 @@ export async function GET(request: Request) {
     
     // If the client prefers HTML (browser request), serve a styled HTML page
     if (preferHtml) {
-      console.log('HTML version requested, attempting to generate styled sitemap');
+      console.log('HTML version requested, generating complex styled sitemap...');
       
-      // *** TEMPORARY SIMPLIFIED HTML FOR DEBUGGING ***
-      const simpleHtmlContent = `<!DOCTYPE html>
+      // *** Restore Original Complex HTML Generation with added logging ***
+      console.log('Calculating page counts...');
+      const pageCounts = countPagesByType(countriesByContinent);
+      console.log(`Page counts calculated: ${JSON.stringify(pageCounts)}`);
+
+      let htmlContent = `<!DOCTYPE html>
 <html>
-<head><title>Sitemap Test</title></head>
-<body><h1>HTML Sitemap Test</h1><p>If you see this, HTML generation is working.</p><p>Accept header was: ${acceptHeader}</p></body>
-</html>`;
+<head>
+  <title>ZippCall Sitemap</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    header {
+      background: linear-gradient(to right, #0062cc, #258cfb);
+      color: white;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+    }
+    
+    .subtitle {
+      margin-top: 5px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+    
+    .summary {
+      background: #f8f9fa;
+      border-radius: 6px;
+      padding: 15px 20px;
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    }
+    
+    .summary-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .summary-item span:first-child {
+      font-size: 22px;
+      font-weight: 500;
+      color: #0062cc;
+    }
+    
+    .summary-item span:last-child {
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+    
+    th {
+      background: #f1f3f5;
+      padding: 12px 15px;
+      text-align: left;
+      font-weight: 500;
+      font-size: 15px;
+      color: #444;
+    }
+    
+    td {
+      padding: 12px 15px;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+    }
+    
+    tr:hover td {
+      background: #f8f9fa;
+    }
+    
+    .url {
+      width: 60%;
+      word-break: break-all;
+    }
+    
+    .url a {
+      color: #0062cc;
+      text-decoration: none;
+    }
+    
+    .url a:hover {
+      text-decoration: underline;
+    }
+    
+    .priority, .change, .last-mod {
+      width: 10%;
+      text-align: center;
+    }
+    
+    .priority {
+      color: #666;
+    }
+    
+    .high-priority {
+      font-weight: 500;
+      color: #0062cc;
+    }
+    
+    .category-header {
+      background: #edf2f7;
+      padding: 10px 15px;
+      font-weight: 500;
+      color: #334155;
+      font-size: 16px;
+      border-top: 1px solid #ddd;
+    }
+    
+    .continent-header {
+      padding-left: 30px;
+      background: #f5f7fa;
+      color: #4a5568;
+      font-weight: 500;
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 15px;
+      color: #666;
+      font-size: 14px;
+    }
+    
+    footer a {
+      color: #0062cc;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .summary {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .summary-item {
+        padding: 5px 0;
+      }
+      .last-mod, .change {
+        display: none;
+      }
+      .url {
+        width: 70%;
+      }
+      .priority {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ZippCall Sitemap</h1>
+      <div class="subtitle">Sitemap for the ZippCall website</div>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="summary">
+      <div class="summary-item">
+        <span>${pageCounts.total}</span>
+        <span>Total URLs</span>
+      </div>
       
-      console.log('Returning simplified HTML sitemap');
-      return new NextResponse(simpleHtmlContent, {
+      <div class="summary-item">
+        <span>${pageCounts.countryPages}</span>
+        <span>Country Pages</span>
+      </div>
+      
+      <div class="summary-item">
+        <span>${pageCounts.highPriorityPages}</span>
+        <span>High Priority Pages</span>
+      </div>
+      
+      <div class="summary-item">
+        <span>${lastMod}</span>
+        <span>Last Updated</span>
+      </div>
+    </div>
+    
+    <table>
+      <tr>
+        <th class="url">URL</th>
+        <th class="last-mod">Last Modified</th>
+        <th class="change">Change Freq</th>
+        <th class="priority">Priority</th>
+      </tr>
+      
+      <!-- Main Pages -->
+      <tr>
+        <td colspan="4" class="category-header">Main Pages</td>
+      </tr>
+      <tr>
+        <td class="url">
+          <a href="${baseUrl}/">/</a>
+        </td>
+        <td class="last-mod">${lastMod}</td>
+        <td class="change">weekly</td>
+        <td class="priority high-priority">1.0</td>
+      </tr>
+      
+      <!-- Directory Pages -->
+      <tr>
+        <td colspan="4" class="category-header">Directory Pages</td>
+      </tr>
+      <tr>
+        <td class="url">
+          <a href="${baseUrl}/countries">/countries</a>
+        </td>
+        <td class="last-mod">${lastMod}</td>
+        <td class="change">weekly</td>
+        <td class="priority high-priority">0.9</td>
+      </tr>
+      
+      <!-- Country Pages By Continent -->
+      <tr>
+        <td colspan="4" class="category-header">Country Pages</td>
+      </tr>`;
+
+      console.log('Starting continent loop...');
+      // Add country pages grouped by continent
+      for (const [continent, countries] of Object.entries(countriesByContinent)) {
+        console.log(`Processing continent: ${continent}`);
+        htmlContent += `
+      <tr>
+        <td colspan="4" class="continent-header">${continent}</td>
+      </tr>`;
+        
+        for (const country of countries) {
+          // console.log(`  Adding country: ${country.id}`); // Optional: log each country if needed
+          htmlContent += `
+      <tr>
+        <td class="url">
+          <a href="${baseUrl}/cheap-calls-to/${country.id}">/cheap-calls-to/${country.id}</a>
+        </td>
+        <td class="last-mod">${lastMod}</td>
+        <td class="change">monthly</td>
+        <td class="priority high-priority">0.8</td>
+      </tr>`;
+        }
+      }
+      console.log('Finished continent loop.');
+      
+      // Add legal pages
+      console.log('Adding legal pages...');
+      htmlContent += `
+      
+      <!-- Legal Pages -->
+      <tr>
+        <td colspan="4" class="category-header">Legal Pages</td>
+      </tr>
+      <tr>
+        <td class="url">
+          <a href="${baseUrl}/terms-of-service">/terms-of-service</a>
+        </td>
+        <td class="last-mod">${lastMod}</td>
+        <td class="change">yearly</td>
+        <td class="priority">0.5</td>
+      </tr>
+      <tr>
+        <td class="url">
+          <a href="${baseUrl}/privacy-policy">/privacy-policy</a>
+        </td>
+        <td class="last-mod">${lastMod}</td>
+        <td class="change">yearly</td>
+        <td class="priority">0.5</td>
+      </tr>
+      <tr>
+        <td class="url">
+          <a href="${baseUrl}/legal">/legal</a>
+        </td>
+        <td class="last-mod">${lastMod}</td>
+        <td class="change">yearly</td>
+        <td class="priority">0.5</td>
+      </tr>
+    </table>
+    
+    <footer>
+      <p>Generated by ZippCall | <a href="https://www.zippcall.com">Back to Homepage</a> | <a href="${request.url}?noxsl">View XML Version</a></p>
+    </footer>
+  </div>
+</body>
+</html>`;
+
+      console.log('Complex HTML sitemap generated successfully');
+      return new NextResponse(htmlContent, {
         headers: {
           'Content-Type': 'text/html',
-          'Cache-Control': 'no-store' // Disable caching for this test
+          'Cache-Control': 'public, max-age=86400, s-maxage=86400'
         }
       });
-      // *** END TEMPORARY SIMPLIFIED HTML ***
-      
-      /* --- Original Complex HTML Generation (commented out for testing) ---
-      let htmlContent = `<!DOCTYPE html>
-      <html>
-      <head>
-        <title>ZippCall Sitemap</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-          body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-          }
-          
-          .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-          }
-          
-          header {
-            background: linear-gradient(to right, #0062cc, #258cfb);
-            color: white;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-          }
-          
-          h1 {
-            margin: 0;
-            font-size: 28px;
-            font-weight: 500;
-          }
-          
-          .subtitle {
-            margin-top: 5px;
-            font-size: 16px;
-            opacity: 0.9;
-          }
-          
-          .summary {
-            background: #f8f9fa;
-            border-radius: 6px;
-            padding: 15px 20px;
-            margin: 20px 0;
-            display: flex;
-            justify-content: space-between;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-          }
-          
-          .summary-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-          }
-          
-          .summary-item span:first-child {
-            font-size: 22px;
-            font-weight: 500;
-            color: #0062cc;
-          }
-          
-          .summary-item span:last-child {
-            font-size: 14px;
-            color: #666;
-            margin-top: 5px;
-          }
-          
-          table {
-            width: 100%;
-            border-collapse: collapse;
-            border-radius: 6px;
-            overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-          }
-          
-          th {
-            background: #f1f3f5;
-            padding: 12px 15px;
-            text-align: left;
-            font-weight: 500;
-            font-size: 15px;
-            color: #444;
-          }
-          
-          td {
-            padding: 12px 15px;
-            border-top: 1px solid #eee;
-            font-size: 14px;
-          }
-          
-          tr:hover td {
-            background: #f8f9fa;
-          }
-          
-          .url {
-            width: 60%;
-            word-break: break-all;
-          }
-          
-          .url a {
-            color: #0062cc;
-            text-decoration: none;
-          }
-          
-          .url a:hover {
-            text-decoration: underline;
-          }
-          
-          .priority, .change, .last-mod {
-            width: 10%;
-            text-align: center;
-          }
-          
-          .priority {
-            color: #666;
-          }
-          
-          .high-priority {
-            font-weight: 500;
-            color: #0062cc;
-          }
-          
-          .category-header {
-            background: #edf2f7;
-            padding: 10px 15px;
-            font-weight: 500;
-            color: #334155;
-            font-size: 16px;
-            border-top: 1px solid #ddd;
-          }
-          
-          .continent-header {
-            padding-left: 30px;
-            background: #f5f7fa;
-            color: #4a5568;
-            font-weight: 500;
-          }
-          
-          footer {
-            text-align: center;
-            margin-top: 30px;
-            padding: 15px;
-            color: #666;
-            font-size: 14px;
-          }
-          
-          footer a {
-            color: #0062cc;
-            text-decoration: none;
-          }
-      
-          @media (max-width: 768px) {
-            .summary {
-              flex-direction: column;
-              gap: 10px;
-            }
-            .summary-item {
-              padding: 5px 0;
-            }
-            .last-mod, .change {
-              display: none;
-            }
-            .url {
-              width: 70%;
-            }
-            .priority {
-              width: 30%;
-            }
-          }
-        </style>
-      </head>
-      <body>
-        <header>
-          <div class="container">
-            <h1>ZippCall Sitemap</h1>
-            <div class="subtitle">Sitemap for the ZippCall website</div>
-          </div>
-        </header>
-        
-        <div class="container">
-          <div class="summary">
-            <div class="summary-item">
-              <span>${countPagesByType(countriesByContinent).total}</span>
-              <span>Total URLs</span>
-            </div>
-            
-            <div class="summary-item">
-              <span>${countPagesByType(countriesByContinent).countryPages}</span>
-              <span>Country Pages</span>
-            </div>
-            
-            <div class="summary-item">
-              <span>${countPagesByType(countriesByContinent).highPriorityPages}</span>
-              <span>High Priority Pages</span>
-            </div>
-            
-            <div class="summary-item">
-              <span>${lastMod}</span>
-              <span>Last Updated</span>
-            </div>
-          </div>
-          
-          <table>
-            <tr>
-              <th class="url">URL</th>
-              <th class="last-mod">Last Modified</th>
-              <th class="change">Change Freq</th>
-              <th class="priority">Priority</th>
-            </tr>
-            
-            <!-- Main Pages -->
-            <tr>
-              <td colspan="4" class="category-header">Main Pages</td>
-            </tr>
-            <tr>
-              <td class="url">
-                <a href="${baseUrl}/">/</a>
-              </td>
-              <td class="last-mod">${lastMod}</td>
-              <td class="change">weekly</td>
-              <td class="priority high-priority">1.0</td>
-            </tr>
-            
-            <!-- Directory Pages -->
-            <tr>
-              <td colspan="4" class="category-header">Directory Pages</td>
-            </tr>
-            <tr>
-              <td class="url">
-                <a href="${baseUrl}/countries">/countries</a>
-              </td>
-              <td class="last-mod">${lastMod}</td>
-              <td class="change">weekly</td>
-              <td class="priority high-priority">0.9</td>
-            </tr>
-            
-            <!-- Country Pages By Continent -->
-            <tr>
-              <td colspan="4" class="category-header">Country Pages</td>
-            </tr>`;
-      
-            // Add country pages grouped by continent
-            for (const [continent, countries] of Object.entries(countriesByContinent)) {
-              htmlContent += `
-            <tr>
-              <td colspan="4" class="continent-header">${continent}</td>
-            </tr>`;
-              
-              for (const country of countries) {
-                htmlContent += `
-            <tr>
-              <td class="url">
-                <a href="${baseUrl}/cheap-calls-to/${country.id}">/cheap-calls-to/${country.id}</a>
-              </td>
-              <td class="last-mod">${lastMod}</td>
-              <td class="change">monthly</td>
-              <td class="priority high-priority">0.8</td>
-            </tr>`;
-              }
-            }
-            
-            // Add legal pages
-            htmlContent += `
-            
-            <!-- Legal Pages -->
-            <tr>
-              <td colspan="4" class="category-header">Legal Pages</td>
-            </tr>
-            <tr>
-              <td class="url">
-                <a href="${baseUrl}/terms-of-service">/terms-of-service</a>
-              </td>
-              <td class="last-mod">${lastMod}</td>
-              <td class="change">yearly</td>
-              <td class="priority">0.5</td>
-            </tr>
-            <tr>
-              <td class="url">
-                <a href="${baseUrl}/privacy-policy">/privacy-policy</a>
-              </td>
-              <td class="last-mod">${lastMod}</td>
-              <td class="change">yearly</td>
-              <td class="priority">0.5</td>
-            </tr>
-            <tr>
-              <td class="url">
-                <a href="${baseUrl}/legal">/legal</a>
-              </td>
-              <td class="last-mod">${lastMod}</td>
-              <td class="change">yearly</td>
-              <td class="priority">0.5</td>
-            </tr>
-          </table>
-          
-          <footer>
-            <p>Generated by ZippCall | <a href="https://www.zippcall.com">Back to Homepage</a> | <a href="${request.url}?noxsl">View XML Version</a></p>
-          </footer>
-        </div>
-      </body>
-      </html>`;
-      
-            console.log('HTML sitemap generated successfully');
-            return new NextResponse(htmlContent, {
-              headers: {
-                'Content-Type': 'text/html',
-                'Cache-Control': 'public, max-age=86400, s-maxage=86400'
-              }
-            });
-      --- End Original Complex HTML Generation --- */
     }
     
     // Otherwise, create the standard XML sitemap
