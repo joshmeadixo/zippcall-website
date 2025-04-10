@@ -1273,5 +1273,613 @@
         "international calls Belgium"
       ]
     }
+  },
+  {
+    "id": "belize",
+    "name": "Belize",
+    "code": "BZ",
+    "dialCode": "+501",
+    "flag": "🇧🇿",
+    "continent": "North America",
+    "languages": [
+      "English",
+      "Spanish",
+      "Kriol"
+    ],
+    "timeZones": "CST (UTC−6)",
+    "description": "Call Belize affordably with ZippCall. Use your browser to connect with mobiles and landlines across the country—no app or downloads needed.",
+    "callTips": "Call between 9am and 5pm CST for best results. Belize does not observe daylight saving time.",
+    "businessInfo": "Business hours are Monday to Friday, 8am to 5pm. Belize is multilingual and informal in communication.",
+    "popularCities": [
+      {
+        "name": "Belize City",
+        "description": "The largest city and former capital, a center for commerce and transport."
+      },
+      {
+        "name": "Belmopan",
+        "description": "The current capital, home to government and administrative offices."
+      },
+      {
+        "name": "San Ignacio",
+        "description": "A popular inland tourism and agriculture hub."
+      },
+      {
+        "name": "Orange Walk",
+        "description": "An important sugar-producing town with growing trade."
+      },
+      {
+        "name": "Dangriga",
+        "description": "Known for culture, fishing, and Garifuna heritage."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial Belize?",
+        "answer": "Dial your exit code, then +501 followed by the 7-digit local number."
+      },
+      {
+        "question": "Are ZippCall rates to Belize affordable?",
+        "answer": "Yes, ZippCall offers great rates to both mobiles and landlines in Belize."
+      },
+      {
+        "question": "Do I need to install anything?",
+        "answer": "No, ZippCall works directly in your browser with no software needed."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Belize | Online Calling with ZippCall",
+      "description": "Call Belize from your browser with ZippCall. Low rates and no downloads for calling mobiles and landlines.",
+      "keywords": [
+        "call Belize",
+        "cheap Belize calls",
+        "international calls Belize"
+      ]
+    }
+  },
+  {
+    "id": "benin",
+    "name": "Benin",
+    "code": "BJ",
+    "dialCode": "+229",
+    "flag": "🇧🇯",
+    "continent": "Africa",
+    "languages": [
+      "French"
+    ],
+    "timeZones": "WAT (UTC+1)",
+    "description": "Use ZippCall to reach Benin with clear, affordable browser-based calls. Connect to landlines and mobiles instantly—no app required.",
+    "callTips": "Call between 9am and 6pm WAT for best response. Benin doesn’t use daylight saving time.",
+    "businessInfo": "Beninese offices operate Monday to Friday, 8am to 5pm. French is the official business language.",
+    "popularCities": [
+      {
+        "name": "Cotonou",
+        "description": "The largest city and economic center, known for trade and transport."
+      },
+      {
+        "name": "Porto-Novo",
+        "description": "The capital city, home to administrative and cultural institutions."
+      },
+      {
+        "name": "Parakou",
+        "description": "An inland trading hub and agricultural town."
+      },
+      {
+        "name": "Abomey",
+        "description": "A historic city and former capital of the Dahomey kingdom."
+      },
+      {
+        "name": "Bohicon",
+        "description": "A growing town linked to commerce and transport."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Benin?",
+        "answer": "Dial your international exit code, then +229 and the local number."
+      },
+      {
+        "question": "Are mobile calls to Benin expensive?",
+        "answer": "No, ZippCall offers low-cost rates for both mobile and landline calls."
+      },
+      {
+        "question": "Is an app needed?",
+        "answer": "No app needed—just use your browser with ZippCall."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Benin | ZippCall Online Dialing",
+      "description": "Call Benin online with ZippCall. Browser-based calling at low rates to both mobile and landline numbers.",
+      "keywords": [
+        "call Benin",
+        "cheap Benin calls",
+        "international calls Benin"
+      ]
+    }
+  },
+  {
+    "id": "bermuda",
+    "name": "Bermuda",
+    "code": "BM",
+    "dialCode": "+1-441",
+    "flag": "🇧🇲",
+    "continent": "North America",
+    "languages": [
+      "English"
+    ],
+    "timeZones": "AST/ADT (UTC−4/−3)",
+    "description": "ZippCall helps you call Bermuda cheaply and easily. Connect via browser—no installations or apps required.",
+    "callTips": "Best time to call Bermuda is 9am to 5pm AST/ADT depending on the season.",
+    "businessInfo": "Bermuda businesses operate Monday to Friday, 9am to 5pm. Finance and insurance dominate the economy.",
+    "popularCities": [
+      {
+        "name": "Hamilton",
+        "description": "The capital and main commercial hub of Bermuda."
+      },
+      {
+        "name": "St. George's",
+        "description": "A UNESCO World Heritage town and former capital."
+      },
+      {
+        "name": "Somerset Village",
+        "description": "A west-end town with cultural and local trade relevance."
+      },
+      {
+        "name": "Southampton Parish",
+        "description": "A residential and tourism-rich area."
+      },
+      {
+        "name": "Devonshire Parish",
+        "description": "A central parish with residential communities and small businesses."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial Bermuda?",
+        "answer": "Dial +1-441 followed by the 7-digit number. Bermuda uses the North American Numbering Plan."
+      },
+      {
+        "question": "Does ZippCall support Bermuda calling?",
+        "answer": "Yes, ZippCall provides low-cost connections to both mobiles and landlines in Bermuda."
+      },
+      {
+        "question": "Is internet required?",
+        "answer": "Yes, ZippCall runs in your browser and needs an internet connection."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Bermuda | ZippCall Browser Calling",
+      "description": "Call Bermuda using ZippCall. Affordable browser-based international calling—no apps or downloads.",
+      "keywords": [
+        "call Bermuda",
+        "cheap Bermuda calls",
+        "international calls Bermuda"
+      ]
+    }
+  },
+  {
+    "id": "bhutan",
+    "name": "Bhutan",
+    "code": "BT",
+    "dialCode": "+975",
+    "flag": "🇧🇹",
+    "continent": "Asia",
+    "languages": [
+      "Dzongkha"
+    ],
+    "timeZones": "BTT (UTC+6)",
+    "description": "Make affordable calls to Bhutan with ZippCall. Connect to both landline and mobile numbers using just your browser.",
+    "callTips": "Best time to call Bhutan is 9am to 6pm BTT. Bhutan does not observe daylight saving time.",
+    "businessInfo": "Bhutanese business hours run Monday to Friday, 9am to 5pm. Communication is formal and respectful.",
+    "popularCities": [
+      {
+        "name": "Thimphu",
+        "description": "The capital and largest city, home to government and commerce."
+      },
+      {
+        "name": "Phuentsholing",
+        "description": "A border town key to trade with India."
+      },
+      {
+        "name": "Paro",
+        "description": "A historical town known for the international airport and tourism."
+      },
+      {
+        "name": "Punakha",
+        "description": "Former capital and an agricultural center."
+      },
+      {
+        "name": "Wangdue Phodrang",
+        "description": "A developing town with infrastructure and agriculture links."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Bhutan?",
+        "answer": "Dial your exit code, then +975, followed by the local number."
+      },
+      {
+        "question": "Are ZippCall calls to Bhutan affordable?",
+        "answer": "Yes, ZippCall offers competitive rates for both landline and mobile calls."
+      },
+      {
+        "question": "Do I need to download anything?",
+        "answer": "No, ZippCall works in your browser—no downloads required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Bhutan | Online Calling | ZippCall",
+      "description": "Call Bhutan from your browser with ZippCall. Affordable and convenient browser-based calls to all numbers.",
+      "keywords": [
+        "call Bhutan",
+        "cheap Bhutan calls",
+        "international calls Bhutan"
+      ]
+    }
+  },
+  {
+    "id": "bolivia",
+    "name": "Bolivia",
+    "code": "BO",
+    "dialCode": "+591",
+    "flag": "🇧🇴",
+    "continent": "South America",
+    "languages": [
+      "Spanish",
+      "Quechua",
+      "Aymara"
+    ],
+    "timeZones": "BOT (UTC−4)",
+    "description": "Call Bolivia affordably with ZippCall. Use your browser to connect with mobiles and landlines—no apps or software needed.",
+    "callTips": "Best times to call are 9am to 6pm BOT. Bolivia does not observe daylight saving time.",
+    "businessInfo": "Bolivian business hours are Monday to Friday, 8:30am to 5:30pm. Spanish is the primary language of business.",
+    "popularCities": [
+      {
+        "name": "La Paz",
+        "description": "Seat of government and commercial center, located at high altitude."
+      },
+      {
+        "name": "Santa Cruz",
+        "description": "The largest city and main economic hub of Bolivia."
+      },
+      {
+        "name": "Cochabamba",
+        "description": "Known for agriculture, food processing, and education."
+      },
+      {
+        "name": "Sucre",
+        "description": "The constitutional capital with colonial architecture."
+      },
+      {
+        "name": "Oruro",
+        "description": "Famous for mining and annual carnival celebrations."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial Bolivia?",
+        "answer": "Dial your country’s exit code, then +591 and the local number."
+      },
+      {
+        "question": "Are mobile calls to Bolivia expensive?",
+        "answer": "No, ZippCall offers flat, competitive rates to all numbers in Bolivia."
+      },
+      {
+        "question": "Is ZippCall an app?",
+        "answer": "No, ZippCall is a browser-based calling tool—no download needed."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Bolivia | ZippCall Browser-Based Calls",
+      "description": "Make low-cost calls to Bolivia with ZippCall. No app—just direct browser connections to landlines and mobiles.",
+      "keywords": [
+        "call Bolivia",
+        "cheap Bolivia calls",
+        "international calls Bolivia"
+      ]
+    }
+  },
+  {
+    "id": "bosnia-and-herzegovina",
+    "name": "Bosnia and Herzegovina",
+    "code": "BA",
+    "dialCode": "+387",
+    "flag": "🇧🇦",
+    "continent": "Europe",
+    "languages": [
+      "Bosnian",
+      "Croatian",
+      "Serbian"
+    ],
+    "timeZones": "CET/CEST (UTC+1/+2)",
+    "description": "Call Bosnia and Herzegovina at low cost using ZippCall. Enjoy browser-based calling with no apps or downloads required.",
+    "callTips": "Best time to call is 9am to 6pm local time. Bosnia observes daylight saving time.",
+    "businessInfo": "Business hours are 8am to 4pm, Monday to Friday. Expect formal communication in professional settings.",
+    "popularCities": [
+      {
+        "name": "Sarajevo",
+        "description": "The capital and largest city, a cultural and political hub."
+      },
+      {
+        "name": "Banja Luka",
+        "description": "An administrative center in the Republika Srpska region."
+      },
+      {
+        "name": "Mostar",
+        "description": "A historic city known for its bridge and tourism sector."
+      },
+      {
+        "name": "Tuzla",
+        "description": "An industrial city with growing services and academic sectors."
+      },
+      {
+        "name": "Zenica",
+        "description": "Known for steel production and economic development."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Bosnia and Herzegovina?",
+        "answer": "Dial your exit code, then +387, followed by the local number without the initial 0."
+      },
+      {
+        "question": "Are ZippCall rates to Bosnia affordable?",
+        "answer": "Yes, ZippCall provides competitive rates for both mobile and landline numbers."
+      },
+      {
+        "question": "Is an app required to call?",
+        "answer": "No, ZippCall is browser-based and requires no software installations."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Bosnia and Herzegovina | ZippCall Online Dialing",
+      "description": "Call Bosnia and Herzegovina online with ZippCall. No apps—just browser-based, low-cost calling.",
+      "keywords": [
+        "call Bosnia",
+        "cheap Bosnia calls",
+        "international calls Bosnia and Herzegovina"
+      ]
+    }
+  },
+  {
+    "id": "botswana",
+    "name": "Botswana",
+    "code": "BW",
+    "dialCode": "+267",
+    "flag": "🇧🇼",
+    "continent": "Africa",
+    "languages": [
+      "English",
+      "Tswana"
+    ],
+    "timeZones": "CAT (UTC+2)",
+    "description": "Call Botswana with ZippCall and save. Affordable browser-based calls to mobile and landline numbers—no downloads needed.",
+    "callTips": "Best time to call Botswana is 8am to 5pm CAT. The country does not use daylight saving time.",
+    "businessInfo": "Businesses operate Monday to Friday, typically 8am to 5pm. English is widely spoken professionally.",
+    "popularCities": [
+      {
+        "name": "Gaborone",
+        "description": "The capital and economic hub of Botswana."
+      },
+      {
+        "name": "Francistown",
+        "description": "A major town in the north known for mining and trade."
+      },
+      {
+        "name": "Maun",
+        "description": "A tourism center and gateway to the Okavango Delta."
+      },
+      {
+        "name": "Serowe",
+        "description": "An important traditional and administrative center."
+      },
+      {
+        "name": "Molepolole",
+        "description": "One of the largest villages, rich in culture and local business."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Botswana?",
+        "answer": "Dial your country’s exit code, then +267, and the local number."
+      },
+      {
+        "question": "Are ZippCall rates to Botswana low?",
+        "answer": "Yes, both mobile and landline calls are competitively priced."
+      },
+      {
+        "question": "Is ZippCall an app?",
+        "answer": "No, ZippCall works in your browser—no app or download required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Botswana | ZippCall Browser Calls",
+      "description": "Call Botswana with ZippCall. Affordable browser-based international calls—no apps, no downloads.",
+      "keywords": [
+        "call Botswana",
+        "cheap Botswana calls",
+        "international calls Botswana"
+      ]
+    }
+  },
+  {
+    "id": "brazil",
+    "name": "Brazil",
+    "code": "BR",
+    "dialCode": "+55",
+    "flag": "🇧🇷",
+    "continent": "South America",
+    "languages": [
+      "Portuguese"
+    ],
+    "timeZones": "BRT/AMT/FNT (UTC−2 to −5)",
+    "description": "ZippCall makes calling Brazil simple and affordable. Connect to mobile and landline numbers right from your browser.",
+    "callTips": "Best time to call Brazil is 9am to 6pm BRT. Mind the time zone differences across regions.",
+    "businessInfo": "Brazilian business hours are 8am to 6pm, Monday to Friday. Business culture is relatively informal.",
+    "popularCities": [
+      {
+        "name": "São Paulo",
+        "description": "The largest city, a financial and business powerhouse."
+      },
+      {
+        "name": "Rio de Janeiro",
+        "description": "Known for tourism, media, and culture."
+      },
+      {
+        "name": "Brasília",
+        "description": "The modern capital and political center of Brazil."
+      },
+      {
+        "name": "Salvador",
+        "description": "A historical and cultural coastal city."
+      },
+      {
+        "name": "Fortaleza",
+        "description": "A northeastern city known for tourism and business growth."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How can I call Brazil?",
+        "answer": "Dial your exit code, then +55, and the area code with number (omit leading 0s)."
+      },
+      {
+        "question": "Are calls to Brazil expensive?",
+        "answer": "Not with ZippCall—rates are flat and budget-friendly."
+      },
+      {
+        "question": "Do I need an app to call Brazil?",
+        "answer": "No, ZippCall works entirely from your browser."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Brazil | ZippCall Online Calling",
+      "description": "Call Brazil easily with ZippCall. Affordable browser-based calls to any Brazilian number—no apps required.",
+      "keywords": [
+        "call Brazil",
+        "cheap Brazil calls",
+        "international calls Brazil"
+      ]
+    }
+  },
+  {
+    "id": "british-indian-ocean-territory",
+    "name": "British Indian Ocean Territory",
+    "code": "IO",
+    "dialCode": "+246",
+    "flag": "🇮🇴",
+    "continent": "Asia",
+    "languages": [
+      "English"
+    ],
+    "timeZones": "IOT (UTC+6)",
+    "description": "Use ZippCall to reach the British Indian Ocean Territory. Call mobiles and landlines directly from your browser—no installations required.",
+    "callTips": "Best calling hours are 9am to 5pm IOT. No daylight saving time is observed.",
+    "businessInfo": "Limited civilian population. Business operations are primarily military or administrative.",
+    "popularCities": [
+      {
+        "name": "Diego Garcia",
+        "description": "The largest island and administrative center, primarily a military base."
+      },
+      {
+        "name": "East Point",
+        "description": "A historical settlement site on Diego Garcia."
+      },
+      {
+        "name": "Point Marianne",
+        "description": "A known area on Diego Garcia with restricted access."
+      },
+      {
+        "name": "Camp Thunder Cove",
+        "description": "A US military facility located on Diego Garcia."
+      },
+      {
+        "name": "Horsburgh Island",
+        "description": "Part of the Peros Banhos atoll group within the territory."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial British Indian Ocean Territory?",
+        "answer": "Dial +246 followed by the specific number, usually coordinated through official channels."
+      },
+      {
+        "question": "Is it possible to call this territory via browser?",
+        "answer": "Yes, ZippCall enables browser-based calling to recognized numbers in the region."
+      },
+      {
+        "question": "Do I need anything special to connect?",
+        "answer": "Just a stable internet connection—ZippCall requires no app."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to British Indian Ocean Territory | ZippCall",
+      "description": "Call the British Indian Ocean Territory via ZippCall. Use your browser for low-cost, direct connections.",
+      "keywords": [
+        "call British Indian Ocean Territory",
+        "cheap BIOT calls",
+        "international calls IO"
+      ]
+    }
+  },
+  {
+    "id": "brunei",
+    "name": "Brunei",
+    "code": "BN",
+    "dialCode": "+673",
+    "flag": "🇧🇳",
+    "continent": "Asia",
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "timeZones": "BNT (UTC+8)",
+    "description": "Call Brunei online with ZippCall. Use your browser to connect to landlines and mobiles—no apps or software needed.",
+    "callTips": "Call between 9am and 6pm BNT. Brunei does not observe daylight saving time.",
+    "businessInfo": "Business hours are Monday to Thursday and Saturday, 8am to 5pm. English is widely used in commerce.",
+    "popularCities": [
+      {
+        "name": "Bandar Seri Begawan",
+        "description": "The capital and political center of Brunei."
+      },
+      {
+        "name": "Kuala Belait",
+        "description": "An oil and gas industrial hub."
+      },
+      {
+        "name": "Tutong",
+        "description": "A quiet town known for its administrative role."
+      },
+      {
+        "name": "Seria",
+        "description": "Brunei’s main petroleum production area."
+      },
+      {
+        "name": "Bangar",
+        "description": "A small town in the Temburong district with government facilities."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Brunei?",
+        "answer": "Dial your exit code, then +673, followed by the local number."
+      },
+      {
+        "question": "Are ZippCall rates good for Brunei?",
+        "answer": "Yes, ZippCall offers flat, competitive rates to all numbers in Brunei."
+      },
+      {
+        "question": "Can I call Brunei from a browser?",
+        "answer": "Yes, ZippCall is 100% browser-based—no apps required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Brunei | ZippCall Browser-Based Calling",
+      "description": "Make low-cost calls to Brunei with ZippCall. No downloads—just connect through your browser.",
+      "keywords": [
+        "call Brunei",
+        "cheap Brunei calls",
+        "international calls Brunei"
+      ]
+    }
   }
 ]

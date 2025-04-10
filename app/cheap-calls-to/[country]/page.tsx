@@ -124,11 +124,37 @@ export default async function Page({ params }: PageProps) {
   // Fetch the live rate from the API
   const liveRate = await fetchPricingData(countryCode);
   
-  // Use the live rate if available, otherwise fallback to a default or static rate
-  const rate = liveRate ? liveRate.toFixed(4) : '0.01';
+  // Use the live rate if available, otherwise fallback to null
+  const rate = liveRate ? liveRate.toFixed(4) : null;
+  const baseUrl = 'https://www.zippcall.com'; // Assuming this is your base URL
+  const pageUrl = `${baseUrl}/cheap-calls-to/${country}`;
+
+  // Prepare JSON-LD schema only if a valid rate was fetched
+  const offerSchema = rate ? {
+    "@context": "https://schema.org",
+    "@type": "Offer",
+    "name": `International Calling Rate to ${displayData.name}`,
+    "description": `Low cost pay-as-you-go calling rates to ${displayData.name} with ZippCall.`,
+    "url": pageUrl,
+    "price": rate, // The fetched and calculated rate
+    "priceCurrency": "USD", // Adjust if necessary
+    "availability": "https://schema.org/InStock", // Or another appropriate availability
+    "seller": {
+      "@type": "Organization",
+      "name": "ZippCall"
+    }
+  } : null;
 
   return (
     <div className="bg-gradient-to-b from-zippcall-light-blue/10 to-white py-16 md:py-24">
+      {/* Add JSON-LD Script here if offerSchema is not null */}
+      {offerSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(offerSchema) }}
+        />
+      )}
+      
       <div className="container mx-auto px-4">
         {/* Skype Replacement Promotional Bar */}
         <div className="bg-zippcall-yellow/20 border border-zippcall-yellow text-zippcall-blue p-3 rounded-lg text-center mb-12">
@@ -203,7 +229,11 @@ export default async function Page({ params }: PageProps) {
               {/* Single rate for all calls */}
               <div className="flex justify-between py-3 border-b">
                 <span className="font-medium text-zippcall-neutral">Call Rate:</span>
-                <span className="font-bold text-green-600">${rate}/min</span>
+                {rate ? (
+                  <span className="font-bold text-green-600">${rate}/min</span>
+                ) : (
+                  <span className="font-medium text-zippcall-neutral">Contact for details</span>
+                )}
               </div>
               
               <div className="bg-zippcall-yellow/10 border-l-4 border-zippcall-yellow p-3 rounded mt-4">
