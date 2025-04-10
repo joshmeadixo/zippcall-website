@@ -130,6 +130,13 @@ export default async function Page({ params }: PageProps) {
   return (
     <div className="bg-gradient-to-b from-zippcall-light-blue/10 to-white py-16 md:py-24">
       <div className="container mx-auto px-4">
+        {/* Skype Replacement Promotional Bar */}
+        <div className="bg-zippcall-yellow/20 border border-zippcall-yellow text-zippcall-blue p-3 rounded-lg text-center mb-12">
+          <p className="font-medium">
+            <span className="font-bold">Skype is closing down in May!</span> ZippCall is the perfect Skype replacement to call {displayData.name}
+          </p>
+        </div>
+        
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-1.5 bg-zippcall-light-blue/10 text-zippcall-blue rounded-full mb-4 font-medium text-sm">
             International Calling
