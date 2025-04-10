@@ -368,5 +368,305 @@
         "cheap Andorra calls"
       ]
     }
+  },
+  {
+    "id": "angola",
+    "name": "Angola",
+    "code": "AO",
+    "dialCode": "+244",
+    "flag": "🇦🇴",
+    "continent": "Africa",
+    "languages": [
+      "Portuguese"
+    ],
+    "timeZones": "WAT (UTC+1)",
+    "description": "ZippCall makes it easy and affordable to call Angola. Stay connected with friends, family, and businesses across Luanda and beyond directly from your browser.",
+    "callTips": "The best time to call Angola is between 9am and 6pm WAT. Angola does not observe daylight saving time.",
+    "businessInfo": "Angolan business culture is formal and hierarchical. Standard business hours are Monday to Friday, from 8am to 5pm.",
+    "popularCities": [
+      {
+        "name": "Luanda",
+        "description": "The capital and largest city, Luanda is Angola’s main economic and administrative center."
+      },
+      {
+        "name": "Lobito",
+        "description": "A key Atlantic port and industrial hub known for oil refining and shipping."
+      },
+      {
+        "name": "Benguela",
+        "description": "An important city in western Angola with a focus on trade, transport, and agriculture."
+      },
+      {
+        "name": "Huambo",
+        "description": "One of the most populous inland cities, known for agriculture and education."
+      },
+      {
+        "name": "Lubango",
+        "description": "A highland city with tourism and farming as major sectors."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How can I dial an Angolan number?",
+        "answer": "Dial your international access code, then +244, followed by the local number without the leading 0."
+      },
+      {
+        "question": "Are rates to Angola affordable with ZippCall?",
+        "answer": "Yes, ZippCall provides competitive pricing for calling both mobiles and landlines in Angola."
+      },
+      {
+        "question": "Do I need an app to call Angola?",
+        "answer": "No, ZippCall works directly in your browser without any app downloads."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Angola - Low Rates Online Calling | ZippCall",
+      "description": "Call Angola from your browser with ZippCall. Affordable calls to mobile and landline numbers—no apps needed.",
+      "keywords": [
+        "call Angola",
+        "cheap Angola calls",
+        "international calls Angola"
+      ]
+    }
+  },
+  {
+    "id": "anguilla",
+    "name": "Anguilla",
+    "code": "AI",
+    "dialCode": "+1-264",
+    "flag": "🇦🇮",
+    "continent": "North America",
+    "languages": [
+      "English"
+    ],
+    "timeZones": "AST (UTC−4)",
+    "description": "Make affordable calls to Anguilla with ZippCall. Contact both mobile and landline numbers directly from your browser without downloads.",
+    "callTips": "The best time to call Anguilla is during standard business hours, 9am–5pm AST.",
+    "businessInfo": "Anguilla follows Caribbean business customs. Offices usually operate from 8am to 4pm, Monday through Friday.",
+    "popularCities": [
+      {
+        "name": "The Valley",
+        "description": "The capital and administrative center of Anguilla, with key government and business institutions."
+      },
+      {
+        "name": "Blowing Point",
+        "description": "A major ferry terminal and entry point with tourism and retail businesses."
+      },
+      {
+        "name": "Sandy Ground",
+        "description": "A key port and nightlife hub with growing tourism appeal."
+      },
+      {
+        "name": "Island Harbour",
+        "description": "A fishing village on the east coast known for its local culture and seafaring."
+      },
+      {
+        "name": "East End Village",
+        "description": "A developing area with resorts and residential growth."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Anguilla from abroad?",
+        "answer": "Dial +1-264 followed by the 7-digit local number, as Anguilla is part of the North American Numbering Plan."
+      },
+      {
+        "question": "Does ZippCall offer good rates for Anguilla?",
+        "answer": "Yes, ZippCall offers low-cost rates for both mobile and landline calls to Anguilla."
+      },
+      {
+        "question": "Is an internet connection needed to use ZippCall?",
+        "answer": "Yes, ZippCall is browser-based and requires a stable internet connection."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Anguilla | Call Online with ZippCall",
+      "description": "Call Anguilla online using ZippCall. Affordable and easy browser-based calling with no downloads.",
+      "keywords": [
+        "call Anguilla",
+        "cheap Anguilla calls",
+        "international calls Anguilla"
+      ]
+    }
+  },
+  {
+    "id": "antigua-and-barbuda",
+    "name": "Antigua and Barbuda",
+    "code": "AG",
+    "dialCode": "+1-268",
+    "flag": "🇦🇬",
+    "continent": "North America",
+    "languages": [
+      "English"
+    ],
+    "timeZones": "AST (UTC−4)",
+    "description": "Use ZippCall to make affordable browser-based calls to Antigua and Barbuda. Contact mobiles and landlines with no app downloads.",
+    "callTips": "Best times to call are between 9am and 5pm AST, during standard business hours.",
+    "businessInfo": "Business hours run from 8am to 4pm, Monday to Friday, with a focus on tourism and services.",
+    "popularCities": [
+      {
+        "name": "St. John's",
+        "description": "The capital and largest city, home to government, tourism, and business sectors."
+      },
+      {
+        "name": "All Saints",
+        "description": "One of the most populous areas, known for residential life and local trade."
+      },
+      {
+        "name": "Liberta",
+        "description": "A growing town near major tourist routes and historical sites."
+      },
+      {
+        "name": "Codrington",
+        "description": "The main town on Barbuda island with cultural and ecological significance."
+      },
+      {
+        "name": "Potters Village",
+        "description": "A residential town with increasing development and local commerce."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Antigua and Barbuda?",
+        "answer": "Dial +1-268 followed by the 7-digit local number, as it uses the North American Numbering Plan."
+      },
+      {
+        "question": "What are the calling rates to Antigua and Barbuda?",
+        "answer": "ZippCall offers affordable flat rates to both mobiles and landlines in Antigua and Barbuda."
+      },
+      {
+        "question": "Do I need to install anything to call?",
+        "answer": "No, ZippCall is entirely browser-based and works without downloads."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Antigua and Barbuda | ZippCall Online Dialing",
+      "description": "Call Antigua and Barbuda easily from your browser with ZippCall. No app needed—just low-cost calling.",
+      "keywords": [
+        "call Antigua and Barbuda",
+        "cheap Antigua calls",
+        "international calls Antigua and Barbuda"
+      ]
+    }
+  },
+  {
+    "id": "argentina",
+    "name": "Argentina",
+    "code": "AR",
+    "dialCode": "+54",
+    "flag": "🇦🇷",
+    "continent": "South America",
+    "languages": [
+      "Spanish"
+    ],
+    "timeZones": "ART (UTC−3)",
+    "description": "Call Argentina with ZippCall for low rates and high-quality connections. No apps or software—just browser-based calling to mobiles and landlines.",
+    "callTips": "The best time to call Argentina is between 10am and 7pm ART, especially for business contacts.",
+    "businessInfo": "Argentina’s workweek is Monday to Friday, with hours usually from 9am to 6pm. Formality is important in meetings.",
+    "popularCities": [
+      {
+        "name": "Buenos Aires",
+        "description": "The capital and economic hub, Buenos Aires is a vibrant metropolis with business and culture at its core."
+      },
+      {
+        "name": "Córdoba",
+        "description": "An educational and industrial center in central Argentina with a strong university presence."
+      },
+      {
+        "name": "Rosario",
+        "description": "A port city along the Paraná River known for agriculture and commerce."
+      },
+      {
+        "name": "Mendoza",
+        "description": "A key wine-producing region with strong tourism and agriculture sectors."
+      },
+      {
+        "name": "La Plata",
+        "description": "A planned city with educational and governmental significance near Buenos Aires."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial an Argentinian number?",
+        "answer": "Dial your exit code, then +54, followed by the area code and number (omit 0 before area code)."
+      },
+      {
+        "question": "Are ZippCall’s Argentina rates the same for landlines and mobiles?",
+        "answer": "Yes, ZippCall provides simple, low rates for both landline and mobile calls to Argentina."
+      },
+      {
+        "question": "Can I call Argentina from my browser?",
+        "answer": "Yes, ZippCall allows browser-based calling with no installations needed."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Argentina - Online Browser Dialing | ZippCall",
+      "description": "Make affordable calls to Argentina using ZippCall. No app required—just clear browser-based connections.",
+      "keywords": [
+        "call Argentina",
+        "cheap Argentina calls",
+        "international calls Argentina"
+      ]
+    }
+  },
+  {
+    "id": "armenia",
+    "name": "Armenia",
+    "code": "AM",
+    "dialCode": "+374",
+    "flag": "🇦🇲",
+    "continent": "Asia",
+    "languages": [
+      "Armenian"
+    ],
+    "timeZones": "AMT (UTC+4)",
+    "description": "ZippCall offers cheap, reliable browser-based calls to Armenia. Stay in touch with friends, family, or business contacts—no apps needed.",
+    "callTips": "Best time to call Armenia is 9am to 6pm AMT. Armenia does not observe daylight saving time.",
+    "businessInfo": "Business hours are typically Monday to Friday, 9am to 6pm. Meetings are formal and punctuality is expected.",
+    "popularCities": [
+      {
+        "name": "Yerevan",
+        "description": "The capital and largest city of Armenia, serving as its political and economic center."
+      },
+      {
+        "name": "Gyumri",
+        "description": "A cultural and historic city in northwest Armenia, known for arts and architecture."
+      },
+      {
+        "name": "Vanadzor",
+        "description": "The third-largest city, a hub for chemicals, textiles, and engineering."
+      },
+      {
+        "name": "Vagharshapat",
+        "description": "Also known as Etchmiadzin, a spiritual center and location of the Armenian Apostolic Church."
+      },
+      {
+        "name": "Hrazdan",
+        "description": "An industrial city northeast of Yerevan, contributing to Armenia’s energy sector."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Armenia internationally?",
+        "answer": "Dial your exit code, then +374, followed by the local number, skipping any leading 0."
+      },
+      {
+        "question": "Are calls to Armenia expensive?",
+        "answer": "Not with ZippCall—our rates are budget-friendly for both mobile and landline calls."
+      },
+      {
+        "question": "Do I need to download ZippCall to call Armenia?",
+        "answer": "No, ZippCall is browser-based and does not require installation."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Armenia - ZippCall Browser-Based Calling",
+      "description": "Make low-cost calls to Armenia online with ZippCall. Connect via browser with no software downloads.",
+      "keywords": [
+        "call Armenia",
+        "cheap Armenia calls",
+        "international calls Armenia"
+      ]
+    }
   }
 ]
