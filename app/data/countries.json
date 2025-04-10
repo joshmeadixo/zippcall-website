@@ -1881,5 +1881,610 @@
         "international calls Brunei"
       ]
     }
+  },
+  {
+    "id": "bulgaria",
+    "name": "Bulgaria",
+    "code": "BG",
+    "dialCode": "+359",
+    "flag": "🇧🇬",
+    "continent": "Europe",
+    "languages": [
+      "Bulgarian"
+    ],
+    "timeZones": "EET/EEST (UTC+2/+3)",
+    "description": "Call Bulgaria with ZippCall—affordable, browser-based international calling with no downloads needed.",
+    "callTips": "Best time to call Bulgaria is between 9am and 6pm EET/EEST.",
+    "businessInfo": "Business hours are Monday to Friday, 9am to 5pm. Meetings are formal and punctual.",
+    "popularCities": [
+      {
+        "name": "Sofia",
+        "description": "The capital and largest city, home to government and business sectors."
+      },
+      {
+        "name": "Plovdiv",
+        "description": "A cultural hub and growing tech center in southern Bulgaria."
+      },
+      {
+        "name": "Varna",
+        "description": "Major port city on the Black Sea with tourism and trade industries."
+      },
+      {
+        "name": "Burgas",
+        "description": "Another important coastal city focused on transport and logistics."
+      },
+      {
+        "name": "Ruse",
+        "description": "A Danube River city with strong economic ties to Romania."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Bulgaria?",
+        "answer": "Dial your exit code, then +359 and the local number, skipping the initial 0."
+      },
+      {
+        "question": "Are Bulgaria calls via ZippCall affordable?",
+        "answer": "Yes, ZippCall offers competitive flat rates for landline and mobile numbers."
+      },
+      {
+        "question": "Is installation required?",
+        "answer": "No, ZippCall is fully browser-based—no app needed."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Bulgaria | Browser Calling | ZippCall",
+      "description": "Make affordable calls to Bulgaria using ZippCall. No downloads, just browser-based international calling.",
+      "keywords": [
+        "call Bulgaria",
+        "cheap Bulgaria calls",
+        "international calls Bulgaria"
+      ]
+    }
+  },
+  {
+    "id": "burkina-faso",
+    "name": "Burkina Faso",
+    "code": "BF",
+    "dialCode": "+226",
+    "flag": "🇧🇫",
+    "continent": "Africa",
+    "languages": [
+      "French"
+    ],
+    "timeZones": "GMT (UTC+0)",
+    "description": "Call Burkina Faso with ZippCall. Affordable online calling directly from your browser—no installations.",
+    "callTips": "Best time to call is 9am to 5pm GMT. Burkina Faso does not observe daylight saving time.",
+    "businessInfo": "Typical business hours are 8am to 4pm, Monday to Friday. French is the language of business.",
+    "popularCities": [
+      {
+        "name": "Ouagadougou",
+        "description": "The capital and largest city, a political and cultural center."
+      },
+      {
+        "name": "Bobo-Dioulasso",
+        "description": "The second-largest city with a strong music and trade presence."
+      },
+      {
+        "name": "Koudougou",
+        "description": "A regional center of agriculture and commerce."
+      },
+      {
+        "name": "Banfora",
+        "description": "A southwestern city near tourist sites and natural attractions."
+      },
+      {
+        "name": "Ouahigouya",
+        "description": "A city in the north with cross-border trade ties."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial Burkina Faso?",
+        "answer": "Dial your international exit code, then +226 followed by the local number."
+      },
+      {
+        "question": "Does ZippCall offer low rates to Burkina Faso?",
+        "answer": "Yes, ZippCall offers cost-effective calling to both mobiles and landlines."
+      },
+      {
+        "question": "Do I need an app?",
+        "answer": "No app needed—ZippCall works fully in your browser."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Burkina Faso | Online with ZippCall",
+      "description": "Call Burkina Faso online with ZippCall. Use your browser to call mobile and landline numbers affordably.",
+      "keywords": [
+        "call Burkina Faso",
+        "cheap Burkina Faso calls",
+        "international calls Burkina Faso"
+      ]
+    }
+  },
+  {
+    "id": "burundi",
+    "name": "Burundi",
+    "code": "BI",
+    "dialCode": "+257",
+    "flag": "🇧🇮",
+    "continent": "Africa",
+    "languages": [
+      "Kirundi",
+      "French"
+    ],
+    "timeZones": "CAT (UTC+2)",
+    "description": "Use ZippCall to connect with Burundi. Call landlines and mobiles directly from your browser at low rates.",
+    "callTips": "Best time to call Burundi is 9am to 5pm CAT.",
+    "businessInfo": "Burundi’s business hours are Monday to Friday, 8am to 4pm. Communication is formal.",
+    "popularCities": [
+      {
+        "name": "Bujumbura",
+        "description": "The economic capital and main port city on Lake Tanganyika."
+      },
+      {
+        "name": "Gitega",
+        "description": "The political capital of Burundi, home to government offices."
+      },
+      {
+        "name": "Ngozi",
+        "description": "A northern city known for agriculture and trade."
+      },
+      {
+        "name": "Rumonge",
+        "description": "A lakeside city with fishing and trade activities."
+      },
+      {
+        "name": "Ruyigi",
+        "description": "A developing city in eastern Burundi."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How can I call Burundi?",
+        "answer": "Dial your exit code, then +257, followed by the local number."
+      },
+      {
+        "question": "Is it cheap to call Burundi?",
+        "answer": "Yes, ZippCall provides low-cost rates for both landline and mobile numbers."
+      },
+      {
+        "question": "Do I need any downloads?",
+        "answer": "No, ZippCall is browser-based and requires no installation."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Burundi | ZippCall Browser-Based",
+      "description": "Call Burundi with ZippCall. Low-cost, app-free browser-based calling to all numbers.",
+      "keywords": [
+        "call Burundi",
+        "cheap Burundi calls",
+        "international calls Burundi"
+      ]
+    }
+  },
+  {
+    "id": "cambodia",
+    "name": "Cambodia",
+    "code": "KH",
+    "dialCode": "+855",
+    "flag": "🇰🇭",
+    "continent": "Asia",
+    "languages": [
+      "Khmer"
+    ],
+    "timeZones": "ICT (UTC+7)",
+    "description": "ZippCall makes calling Cambodia easy and low-cost. Connect from your browser to mobiles and landlines—no apps needed.",
+    "callTips": "Best time to call Cambodia is 9am to 6pm ICT.",
+    "businessInfo": "Business hours in Cambodia are 8am to 5pm, Monday to Friday. Business culture is polite and formal.",
+    "popularCities": [
+      {
+        "name": "Phnom Penh",
+        "description": "The capital and main commercial and political center."
+      },
+      {
+        "name": "Siem Reap",
+        "description": "Famous for Angkor Wat and a major tourism destination."
+      },
+      {
+        "name": "Sihanoukville",
+        "description": "A coastal city with growing trade and tourism sectors."
+      },
+      {
+        "name": "Battambang",
+        "description": "Known for rice production and colonial architecture."
+      },
+      {
+        "name": "Kampong Cham",
+        "description": "A provincial center on the Mekong River."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Cambodia?",
+        "answer": "Dial your exit code, then +855 followed by the local number."
+      },
+      {
+        "question": "Are ZippCall rates to Cambodia good?",
+        "answer": "Yes, ZippCall provides affordable flat rates to all Cambodian numbers."
+      },
+      {
+        "question": "Is software needed?",
+        "answer": "No software needed—ZippCall works in your browser."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Cambodia | ZippCall Online Calling",
+      "description": "Call Cambodia easily from your browser with ZippCall. No app required—just low-cost rates.",
+      "keywords": [
+        "call Cambodia",
+        "cheap Cambodia calls",
+        "international calls Cambodia"
+      ]
+    }
+  },
+  {
+    "id": "cameroon",
+    "name": "Cameroon",
+    "code": "CM",
+    "dialCode": "+237",
+    "flag": "🇨🇲",
+    "continent": "Africa",
+    "languages": [
+      "French",
+      "English"
+    ],
+    "timeZones": "WAT (UTC+1)",
+    "description": "Use ZippCall to call Cameroon from anywhere. Browser-based calling to mobiles and landlines with no app required.",
+    "callTips": "Best time to call Cameroon is 9am to 6pm WAT.",
+    "businessInfo": "Cameroon’s business culture is bilingual. Work hours are Monday to Friday, 8am to 5pm.",
+    "popularCities": [
+      {
+        "name": "Yaoundé",
+        "description": "The political capital and administrative center."
+      },
+      {
+        "name": "Douala",
+        "description": "The economic capital and major seaport."
+      },
+      {
+        "name": "Garoua",
+        "description": "A northern city and key trade hub."
+      },
+      {
+        "name": "Bamenda",
+        "description": "An anglophone city in the northwest with commercial growth."
+      },
+      {
+        "name": "Bafoussam",
+        "description": "A highland city with vibrant agriculture and trade."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial Cameroon?",
+        "answer": "Dial your exit code, then +237, and the local number."
+      },
+      {
+        "question": "Are ZippCall rates to Cameroon competitive?",
+        "answer": "Yes, ZippCall offers low-cost flat rates to all numbers in Cameroon."
+      },
+      {
+        "question": "Do I need an app or software?",
+        "answer": "No, ZippCall works directly in your browser—no download required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Cameroon | ZippCall Browser-Based",
+      "description": "Call Cameroon using ZippCall—affordable browser-based calling to landlines and mobiles.",
+      "keywords": [
+        "call Cameroon",
+        "cheap Cameroon calls",
+        "international calls Cameroon"
+      ]
+    }
+  },
+  {
+    "id": "canada",
+    "name": "Canada",
+    "code": "CA",
+    "dialCode": "+1",
+    "flag": "🇨🇦",
+    "continent": "North America",
+    "languages": [
+      "English",
+      "French"
+    ],
+    "timeZones": "Multiple (UTC−3.5 to −8)",
+    "description": "Call Canada easily and affordably with ZippCall. Use your browser to connect to landlines and mobiles—no downloads required.",
+    "callTips": "Best time to call is 9am to 6pm in the recipient’s local time zone. Canada spans six time zones.",
+    "businessInfo": "Business hours are typically 9am to 5pm, Monday to Friday. Bilingual communication is common in some provinces.",
+    "popularCities": [
+      {
+        "name": "Toronto",
+        "description": "Canada’s largest city and a financial and multicultural center."
+      },
+      {
+        "name": "Vancouver",
+        "description": "A west coast city known for trade, tourism, and tech."
+      },
+      {
+        "name": "Montreal",
+        "description": "A French-speaking hub of culture, business, and innovation."
+      },
+      {
+        "name": "Calgary",
+        "description": "A center for energy and business in western Canada."
+      },
+      {
+        "name": "Ottawa",
+        "description": "The capital of Canada and home to federal institutions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial Canada?",
+        "answer": "Dial +1 followed by the 10-digit number. Canada shares a dialing code with the US."
+      },
+      {
+        "question": "Are ZippCall rates good for Canada?",
+        "answer": "Yes, ZippCall provides low-cost rates to all Canadian landlines and mobiles."
+      },
+      {
+        "question": "Do I need an app to call Canada?",
+        "answer": "No, ZippCall is browser-based and requires no app or software."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Canada | ZippCall Online Dialing",
+      "description": "Make low-cost calls to Canada using your browser. ZippCall offers easy online calling—no app required.",
+      "keywords": [
+        "call Canada",
+        "cheap Canada calls",
+        "international calls Canada"
+      ]
+    }
+  },
+  {
+    "id": "cape-verde",
+    "name": "Cape Verde",
+    "code": "CV",
+    "dialCode": "+238",
+    "flag": "🇨🇻",
+    "continent": "Africa",
+    "languages": [
+      "Portuguese"
+    ],
+    "timeZones": "CVT (UTC−1)",
+    "description": "Call Cape Verde at low rates with ZippCall. Connect to landlines and mobiles straight from your browser—no installation needed.",
+    "callTips": "Best time to call is 9am to 5pm CVT. Cape Verde does not observe daylight saving time.",
+    "businessInfo": "Business hours are Monday to Friday, 8am to 4pm. Portuguese is the official business language.",
+    "popularCities": [
+      {
+        "name": "Praia",
+        "description": "The capital and largest city, located on Santiago Island."
+      },
+      {
+        "name": "Mindelo",
+        "description": "A cultural and port city on São Vicente Island."
+      },
+      {
+        "name": "Santa Maria",
+        "description": "A tourist town on Sal Island with beach resorts."
+      },
+      {
+        "name": "Assomada",
+        "description": "A market town in the interior of Santiago."
+      },
+      {
+        "name": "Espargos",
+        "description": "Main administrative city on Sal Island."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial Cape Verde?",
+        "answer": "Dial your exit code, then +238 followed by the local number."
+      },
+      {
+        "question": "Does ZippCall offer competitive rates?",
+        "answer": "Yes, ZippCall provides flat rates for both mobile and landline numbers."
+      },
+      {
+        "question": "Is software required?",
+        "answer": "No, ZippCall works entirely in your browser—no app needed."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Cape Verde | Online Calling | ZippCall",
+      "description": "Call Cape Verde from your browser with ZippCall. Low-cost rates to mobile and landline numbers.",
+      "keywords": [
+        "call Cape Verde",
+        "cheap Cape Verde calls",
+        "international calls Cape Verde"
+      ]
+    }
+  },
+  {
+    "id": "cayman-islands",
+    "name": "Cayman Islands",
+    "code": "KY",
+    "dialCode": "+1-345",
+    "flag": "🇰🇾",
+    "continent": "North America",
+    "languages": [
+      "English"
+    ],
+    "timeZones": "EST (UTC−5)",
+    "description": "Use ZippCall to call the Cayman Islands. Affordable browser-based calls to landlines and mobiles—no downloads needed.",
+    "callTips": "Best time to call is between 9am and 5pm EST. The Cayman Islands do not observe daylight saving time.",
+    "businessInfo": "Business hours are typically Monday to Friday, 8:30am to 5pm. The islands are a financial services hub.",
+    "popularCities": [
+      {
+        "name": "George Town",
+        "description": "The capital and center of finance and commerce."
+      },
+      {
+        "name": "West Bay",
+        "description": "A residential and tourism area near beaches and resorts."
+      },
+      {
+        "name": "Bodden Town",
+        "description": "A historic town with a growing residential base."
+      },
+      {
+        "name": "East End",
+        "description": "Known for scenic drives and quiet resorts."
+      },
+      {
+        "name": "North Side",
+        "description": "A peaceful coastal district popular with divers."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial the Cayman Islands?",
+        "answer": "Dial +1-345 followed by the 7-digit number. It uses the North American Numbering Plan."
+      },
+      {
+        "question": "Are ZippCall rates affordable?",
+        "answer": "Yes, ZippCall offers great low rates to landlines and mobiles in the Cayman Islands."
+      },
+      {
+        "question": "Do I need an app?",
+        "answer": "No, ZippCall is fully browser-based and requires no downloads."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Cayman Islands | ZippCall Online Calling",
+      "description": "Call the Cayman Islands with ZippCall. Affordable browser-based calling—no app required.",
+      "keywords": [
+        "call Cayman Islands",
+        "cheap Cayman calls",
+        "international calls Cayman Islands"
+      ]
+    }
+  },
+  {
+    "id": "central-african-republic",
+    "name": "Central African Republic",
+    "code": "CF",
+    "dialCode": "+236",
+    "flag": "🇨🇫",
+    "continent": "Africa",
+    "languages": [
+      "French",
+      "Sango"
+    ],
+    "timeZones": "WAT (UTC+1)",
+    "description": "Call the Central African Republic online with ZippCall. Use your browser to connect at low cost—no app needed.",
+    "callTips": "Best time to call is 9am to 6pm WAT.",
+    "businessInfo": "Business hours are typically Monday to Friday, 8am to 5pm. French is widely used in business.",
+    "popularCities": [
+      {
+        "name": "Bangui",
+        "description": "The capital and largest city, center for administration and trade."
+      },
+      {
+        "name": "Bimbo",
+        "description": "A populous area near Bangui with industrial development."
+      },
+      {
+        "name": "Berbérati",
+        "description": "An important southwestern city with mining and agriculture."
+      },
+      {
+        "name": "Bossangoa",
+        "description": "Known for its trade links and regional market."
+      },
+      {
+        "name": "Bambari",
+        "description": "A central town with gold mining and transportation routes."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial the Central African Republic?",
+        "answer": "Dial your international exit code, then +236 followed by the local number."
+      },
+      {
+        "question": "Does ZippCall offer good rates?",
+        "answer": "Yes, ZippCall provides low-cost rates for landline and mobile calls to the country."
+      },
+      {
+        "question": "Is ZippCall an app?",
+        "answer": "No, ZippCall is a browser-based calling tool—no installation required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Central African Republic | ZippCall",
+      "description": "Call the Central African Republic from your browser using ZippCall. No app, just low rates.",
+      "keywords": [
+        "call Central African Republic",
+        "cheap CAR calls",
+        "international calls Central Africa"
+      ]
+    }
+  },
+  {
+    "id": "chad",
+    "name": "Chad",
+    "code": "TD",
+    "dialCode": "+235",
+    "flag": "🇹🇩",
+    "continent": "Africa",
+    "languages": [
+      "French",
+      "Arabic"
+    ],
+    "timeZones": "WAT (UTC+1)",
+    "description": "Make low-cost calls to Chad using ZippCall. Connect via browser—no apps, no downloads.",
+    "callTips": "Call between 9am and 6pm WAT for best results.",
+    "businessInfo": "Workdays run Monday to Friday, 8am to 5pm. Arabic and French are used in business.",
+    "popularCities": [
+      {
+        "name": "N'Djamena",
+        "description": "The capital and largest city, located near the Cameroon border."
+      },
+      {
+        "name": "Moundou",
+        "description": "A southern city known for industry and breweries."
+      },
+      {
+        "name": "Sarh",
+        "description": "A center for cotton and fishing in southern Chad."
+      },
+      {
+        "name": "Abéché",
+        "description": "An eastern city with historical and trade significance."
+      },
+      {
+        "name": "Doba",
+        "description": "Located in the oil-producing south, an emerging commercial center."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial Chad?",
+        "answer": "Dial your exit code, then +235 and the local number."
+      },
+      {
+        "question": "Are ZippCall rates low for Chad?",
+        "answer": "Yes, ZippCall provides cost-effective calling for landlines and mobiles."
+      },
+      {
+        "question": "Do I need to download ZippCall?",
+        "answer": "No, ZippCall works entirely in your browser—no app needed."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Chad | ZippCall Browser-Based",
+      "description": "Call Chad online with ZippCall. Low-cost, app-free calling from your browser to any number.",
+      "keywords": [
+        "call Chad",
+        "cheap Chad calls",
+        "international calls Chad"
+      ]
+    }
   }
 ]
