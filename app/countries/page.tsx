@@ -54,27 +54,6 @@ export default function CountriesPage() {
         </div>
         
         <CountryList countries={countriesForList} />
-        
-        <div className="bg-zippcall-blue/5 rounded-xl p-8 border border-zippcall-blue/10">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="mb-6 md:mb-0 md:mr-8">
-              <h2 className="text-2xl font-bold text-zippcall-blue mb-3">Don't see your country?</h2>
-              <p className="text-zippcall-neutral">
-                We're constantly adding more destinations to our service. Contact us if you need information about a specific country.
-              </p>
-            </div>
-            <Link 
-              href="mailto:support@zippcall.com" 
-              className="bg-white text-zippcall-blue font-medium px-6 py-3 rounded-md shadow-sm hover:bg-zippcall-light-blue/10 transition-colors whitespace-nowrap flex items-center"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-              </svg>
-              Contact Support
-            </Link>
-          </div>
-        </div>
       </div>
     </div>
   );

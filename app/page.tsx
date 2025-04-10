@@ -17,6 +17,7 @@ const HowItWorks = dynamic(() => import('./components/HowItWorks'), { loading: (
 const Features = dynamic(() => import('./components/Features'), { loading: () => <p>Loading...</p> });
 const UseCases = dynamic(() => import('./components/UseCases'), { loading: () => <p>Loading...</p> });
 const Pricing = dynamic(() => import('./components/Pricing'), { loading: () => <p>Loading...</p> });
+const InteractiveMap = dynamic(() => import('./components/InteractiveMap'), { loading: () => <p>Loading...</p> });
 const FounderNote = dynamic(() => import('./components/FounderNote'), { loading: () => <p>Loading...</p> });
 const FAQ = dynamic(() => import('./components/FAQ'), { loading: () => <p>Loading...</p> });
 const CallToAction = dynamic(() => import('./components/CallToAction'), { loading: () => <p>Loading...</p> });
@@ -173,6 +174,39 @@ export default function Home() {
       {/* <Testimonials /> */}
       <UseCases />
       <Pricing />
+      
+      {/* Interactive Map Section */}
+      <section className="py-12 md:py-20 bg-gradient-to-b from-white to-zippcall-light-blue/5">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-1.5 bg-zippcall-light-blue/10 text-zippcall-blue rounded-full mb-4 font-medium text-sm">
+              Global Coverage
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-zippcall-blue mb-4">
+              Explore Our International Calling Options
+            </h2>
+            <p className="text-lg text-zippcall-neutral max-w-2xl mx-auto mb-8">
+              Click on any country to view detailed calling rates and make affordable international calls
+              from your browser with ZippCall.
+            </p>
+          </div>
+          
+          <InteractiveMap />
+          
+          <div className="mt-8 text-center">
+            <a 
+              href="/countries" 
+              className="inline-flex items-center text-zippcall-blue hover:text-zippcall-light-blue font-medium transition-colors"
+            >
+              View all countries and detailed rates
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      
       <FounderNote />
       <FAQ />
       <CallToAction />
