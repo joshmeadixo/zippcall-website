@@ -32,8 +32,9 @@ export default function Footer() {
   return (
     <footer className="bg-zippcall-blue text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="flex justify-center">
-          <div className="text-center max-w-md">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {/* Company info */}
+          <div>
             <Link href="/" className="inline-block mb-6">
               <Image
                 src="/images/zippcall-logo.png"
@@ -47,13 +48,36 @@ export default function Footer() {
               Make affordable international calls directly from your browser.
             </p>
           </div>
+
+          {/* Helpful Info Section */}
+          <div>
+            <h3 className="font-bold text-white text-lg mb-4">Helpful Information</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/country-codes" className="text-gray-300 hover:text-white transition-colors">
+                  International Country Codes
+                </Link>
+              </li>
+              {/* Add more helpful links here as they become available */}
+            </ul>
+          </div>
+
+          {/* Empty column for now - for future content */}
+          <div className="hidden lg:block">
+            {/* This will be filled in the future */}
+          </div>
+
+          {/* Empty column for now - for future content */}
+          <div className="hidden lg:block">
+            {/* This will be filled in the future */}
+          </div>
         </div>
         
         <div className="border-t border-zippcall-light-blue/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-400 mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} ZippCall. All rights reserved.
           </p>
-          <div className="flex space-x-6">
+          <div className="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2">
             <button 
               onClick={handleContactClick}
               className="text-sm text-gray-400 hover:text-white transition-colors"

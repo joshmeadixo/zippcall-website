@@ -281,6 +281,14 @@ export async function GET(request: Request) {
         <td class="change">weekly</td>
         <td class="priority high-priority">0.9</td>
       </tr>
+      <tr>
+        <td class="url">
+          <a href="${baseUrl}/country-codes">/country-codes</a>
+        </td>
+        <td class="last-mod">${lastMod}</td>
+        <td class="change">weekly</td>
+        <td class="priority high-priority">0.9</td>
+      </tr>
       
       <!-- Country Pages By Continent -->
       <tr>
@@ -381,6 +389,12 @@ export async function GET(request: Request) {
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>${baseUrl}/country-codes</loc>
+    <lastmod>${lastMod}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
   
   <!-- Country Pages By Continent -->`;
 
@@ -466,7 +480,7 @@ function countPagesByType(countriesByContinent: Record<string, Array<any>>) {
   
   // Count other pages
   const mainPages = 1; // Homepage
-  const directoryPages = 1; // Countries page
+  const directoryPages = 2; // Countries page and Country Codes page
   const legalPages = 3; // Terms, Privacy, Legal
   
   // Calculate high priority pages (priority >= 0.8)
