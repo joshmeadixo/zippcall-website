@@ -2486,5 +2486,1455 @@
         "international calls Chad"
       ]
     }
+  },
+  {
+    "id": "chile",
+    "name": "Chile",
+    "code": "CL",
+    "dialCode": "+56",
+    "flag": "🇨🇱",
+    "continent": "South America",
+    "languages": [
+      "Spanish"
+    ],
+    "timeZones": "CLT/CLST (UTC−4/−3)",
+    "description": "Use ZippCall to make low-cost calls to Chile. Browser-based calling to landlines and mobiles—no software required.",
+    "callTips": "Best time to call Chile is 9am to 6pm local time. Chile observes daylight saving time.",
+    "businessInfo": "Business hours in Chile are Monday to Friday, 9am to 6pm. Professionalism and punctuality are valued.",
+    "popularCities": [
+      {
+        "name": "Santiago",
+        "description": "The capital and financial hub of Chile."
+      },
+      {
+        "name": "Valparaíso",
+        "description": "A coastal city and major port with vibrant culture."
+      },
+      {
+        "name": "Concepción",
+        "description": "An industrial and educational center in the south."
+      },
+      {
+        "name": "Antofagasta",
+        "description": "Key mining and economic city in northern Chile."
+      },
+      {
+        "name": "La Serena",
+        "description": "Tourist and historic city in the Coquimbo region."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Chile?",
+        "answer": "Dial your exit code, then +56 followed by the local number."
+      },
+      {
+        "question": "Are ZippCall's rates to Chile affordable?",
+        "answer": "Yes, ZippCall offers low rates to mobiles and landlines in Chile."
+      },
+      {
+        "question": "Do I need an app to call Chile?",
+        "answer": "No app is needed. ZippCall works entirely in your browser."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Chile | ZippCall Browser Calling",
+      "description": "Call Chile from your browser with ZippCall. Low rates and no downloads required.",
+      "keywords": [
+        "call Chile",
+        "cheap Chile calls",
+        "international calls Chile"
+      ]
+    }
+  },
+  {
+    "id": "china",
+    "name": "China",
+    "code": "CN",
+    "dialCode": "+86",
+    "flag": "🇨🇳",
+    "continent": "Asia",
+    "languages": [
+      "Mandarin Chinese"
+    ],
+    "timeZones": "CST (UTC+8)",
+    "description": "ZippCall makes calling China simple and affordable. Use your browser to connect—no apps needed.",
+    "callTips": "Best time to call China is 9am to 6pm CST. China does not observe daylight saving time.",
+    "businessInfo": "Standard work hours are Monday to Friday, 9am to 6pm. Business etiquette is formal.",
+    "popularCities": [
+      {
+        "name": "Beijing",
+        "description": "The capital city and center of government and culture."
+      },
+      {
+        "name": "Shanghai",
+        "description": "A global financial hub and largest city by population."
+      },
+      {
+        "name": "Guangzhou",
+        "description": "A major port and commercial city in the south."
+      },
+      {
+        "name": "Shenzhen",
+        "description": "Known for tech innovation and manufacturing."
+      },
+      {
+        "name": "Chengdu",
+        "description": "Famous for its food, culture, and tech sector."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call China?",
+        "answer": "Dial your exit code, then +86, followed by the area code and number."
+      },
+      {
+        "question": "Are China calls expensive with ZippCall?",
+        "answer": "No, ZippCall offers competitive, low-cost rates to all numbers in China."
+      },
+      {
+        "question": "Do I need to install anything?",
+        "answer": "No, just use your browser—ZippCall is 100% online."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to China | Online with ZippCall",
+      "description": "Make low-cost calls to China using ZippCall. Browser-based, no app needed.",
+      "keywords": [
+        "call China",
+        "cheap China calls",
+        "international calls China"
+      ]
+    }
+  },
+  {
+    "id": "colombia",
+    "name": "Colombia",
+    "code": "CO",
+    "dialCode": "+57",
+    "flag": "🇨🇴",
+    "continent": "South America",
+    "languages": [
+      "Spanish"
+    ],
+    "timeZones": "COT (UTC−5)",
+    "description": "Call Colombia using ZippCall. Low-cost, browser-based calling to both landlines and mobile phones—no app required.",
+    "callTips": "Best time to call Colombia is 9am to 6pm COT.",
+    "businessInfo": "Colombian business hours are Monday to Friday, 8am to 5pm. Business communication is respectful but friendly.",
+    "popularCities": [
+      {
+        "name": "Bogotá",
+        "description": "The capital and largest city, a center for business and politics."
+      },
+      {
+        "name": "Medellín",
+        "description": "A modern city known for innovation and tech."
+      },
+      {
+        "name": "Cali",
+        "description": "Major city in the southwest, known for trade and culture."
+      },
+      {
+        "name": "Barranquilla",
+        "description": "A port city on the Caribbean with strong commerce."
+      },
+      {
+        "name": "Cartagena",
+        "description": "A historic and tourist destination on the coast."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How can I call Colombia?",
+        "answer": "Dial your exit code, then +57 followed by the area code and number."
+      },
+      {
+        "question": "Are ZippCall rates cheap for Colombia?",
+        "answer": "Yes, ZippCall offers competitive flat rates for Colombia."
+      },
+      {
+        "question": "Do I need an app or software?",
+        "answer": "No app is needed. Use your browser to call."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Colombia | ZippCall Browser Dialing",
+      "description": "Call Colombia online with ZippCall. Affordable browser-based international calling.",
+      "keywords": [
+        "call Colombia",
+        "cheap Colombia calls",
+        "international calls Colombia"
+      ]
+    }
+  },
+  {
+    "id": "comoros",
+    "name": "Comoros",
+    "code": "KM",
+    "dialCode": "+269",
+    "flag": "🇰🇲",
+    "continent": "Africa",
+    "languages": [
+      "Arabic",
+      "French",
+      "Comorian"
+    ],
+    "timeZones": "EAT (UTC+3)",
+    "description": "Make affordable calls to Comoros with ZippCall. Call directly from your browser—no app downloads needed.",
+    "callTips": "Call between 9am and 6pm EAT for best results.",
+    "businessInfo": "Business hours are Monday to Friday, 8am to 4pm. French and Arabic are used in formal settings.",
+    "popularCities": [
+      {
+        "name": "Moroni",
+        "description": "The capital and largest city on Grande Comore island."
+      },
+      {
+        "name": "Mutsamudu",
+        "description": "A port city on Anjouan island, known for trade."
+      },
+      {
+        "name": "Fomboni",
+        "description": "The main town on Mohéli island."
+      },
+      {
+        "name": "Domoni",
+        "description": "An historic town on Anjouan with cultural significance."
+      },
+      {
+        "name": "Ouani",
+        "description": "A small town with the main airport of Anjouan."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Comoros?",
+        "answer": "Dial your international exit code, then +269 and the local number."
+      },
+      {
+        "question": "Is it expensive to call Comoros?",
+        "answer": "Not with ZippCall. Our rates are cost-effective and fair."
+      },
+      {
+        "question": "Is software needed?",
+        "answer": "No, just open ZippCall in your browser to connect."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Comoros | ZippCall Online",
+      "description": "Call Comoros with ZippCall. Browser-based, no app required, just low-cost calling.",
+      "keywords": [
+        "call Comoros",
+        "cheap Comoros calls",
+        "international calls Comoros"
+      ]
+    }
+  },
+  {
+    "id": "congo",
+    "name": "Congo",
+    "code": "CG",
+    "dialCode": "+242",
+    "flag": "🇨🇬",
+    "continent": "Africa",
+    "languages": [
+      "French"
+    ],
+    "timeZones": "WAT (UTC+1)",
+    "description": "Use ZippCall to call Congo at low rates. No downloads—just call from your browser.",
+    "callTips": "Call Congo between 9am and 6pm WAT for best response.",
+    "businessInfo": "Business is conducted in French, typically 8am to 5pm, Monday to Friday.",
+    "popularCities": [
+      {
+        "name": "Brazzaville",
+        "description": "The capital and largest city, located on the Congo River."
+      },
+      {
+        "name": "Pointe-Noire",
+        "description": "A major port and economic hub on the Atlantic coast."
+      },
+      {
+        "name": "Dolisie",
+        "description": "A city known for transport and forestry."
+      },
+      {
+        "name": "Nkayi",
+        "description": "An agricultural and sugar-producing town."
+      },
+      {
+        "name": "Owando",
+        "description": "A regional capital in the north with growing services."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial Congo?",
+        "answer": "Dial your exit code, then +242 and the local number."
+      },
+      {
+        "question": "Are calls to Congo cheap with ZippCall?",
+        "answer": "Yes, ZippCall provides low rates to mobiles and landlines."
+      },
+      {
+        "question": "Do I need an app to use ZippCall?",
+        "answer": "No app needed—just connect via browser."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Congo | ZippCall Browser Calling",
+      "description": "Make browser-based calls to Congo with ZippCall. No software required—just low-cost international calling.",
+      "keywords": [
+        "call Congo",
+        "cheap Congo calls",
+        "international calls Congo"
+      ]
+    }
+  },
+  {
+    "id": "cook-islands",
+    "name": "Cook Islands",
+    "code": "CK",
+    "dialCode": "+682",
+    "flag": "🇨🇰",
+    "continent": "Oceania",
+    "languages": [
+      "English",
+      "Cook Islands Māori"
+    ],
+    "timeZones": "CKT (UTC−10)",
+    "description": "ZippCall helps you call the Cook Islands at affordable rates. Browser-based calling with no downloads required.",
+    "callTips": "Best time to call is 9am to 5pm CKT.",
+    "businessInfo": "Offices are open Monday to Friday, typically from 8am to 4pm. English is used in formal communication.",
+    "popularCities": [
+      {
+        "name": "Avarua",
+        "description": "Capital city and administrative hub of the Cook Islands."
+      },
+      {
+        "name": "Arorangi",
+        "description": "A village known for resorts and tourism on Rarotonga."
+      },
+      {
+        "name": "Ngatangiia",
+        "description": "Home to cultural landmarks and community events."
+      },
+      {
+        "name": "Atiu",
+        "description": "An island with eco-tourism and traditional village life."
+      },
+      {
+        "name": "Aitutaki",
+        "description": "A lagoon island popular for luxury travel and weddings."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call the Cook Islands?",
+        "answer": "Dial your country’s exit code, then +682 and the local number."
+      },
+      {
+        "question": "Is calling the Cook Islands expensive?",
+        "answer": "No, ZippCall keeps it affordable for all call types."
+      },
+      {
+        "question": "Do I need software to call?",
+        "answer": "No, ZippCall is browser-based. No app or installation needed."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Cook Islands | ZippCall Online",
+      "description": "Call the Cook Islands from your browser with ZippCall. No app—just low-cost international calls.",
+      "keywords": [
+        "call Cook Islands",
+        "cheap Cook Islands calls",
+        "international calls Cook Islands"
+      ]
+    }
+  },
+  {
+    "id": "costa-rica",
+    "name": "Costa Rica",
+    "code": "CR",
+    "dialCode": "+506",
+    "flag": "🇨🇷",
+    "continent": "North America",
+    "languages": [
+      "Spanish"
+    ],
+    "timeZones": "CST (UTC−6)",
+    "description": "ZippCall offers affordable browser-based calls to Costa Rica. Connect with mobiles and landlines—no downloads needed.",
+    "callTips": "Best time to call is between 9am and 6pm CST. Costa Rica does not observe daylight saving time.",
+    "businessInfo": "Business hours are Monday to Friday, 8am to 5pm. Spanish is the primary language of communication.",
+    "popularCities": [
+      {
+        "name": "San José",
+        "description": "The capital and largest city, a hub for business and government."
+      },
+      {
+        "name": "Alajuela",
+        "description": "Close to the international airport and a growing economic center."
+      },
+      {
+        "name": "Cartago",
+        "description": "One of the oldest cities with historical and educational significance."
+      },
+      {
+        "name": "Heredia",
+        "description": "A city known for universities and proximity to the capital."
+      },
+      {
+        "name": "Liberia",
+        "description": "The gateway to northern tourism and beaches."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial Costa Rica?",
+        "answer": "Dial your country’s exit code, then +506 and the 8-digit number."
+      },
+      {
+        "question": "Are calls to Costa Rica affordable?",
+        "answer": "Yes, ZippCall provides competitive low rates to mobiles and landlines."
+      },
+      {
+        "question": "Do I need to install anything?",
+        "answer": "No, ZippCall works in your browser—no app required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Costa Rica | ZippCall Browser Calling",
+      "description": "Call Costa Rica online with ZippCall. Low-cost international calling from your browser.",
+      "keywords": [
+        "call Costa Rica",
+        "cheap Costa Rica calls",
+        "international calls Costa Rica"
+      ]
+    }
+  },
+  {
+    "id": "croatia",
+    "name": "Croatia",
+    "code": "HR",
+    "dialCode": "+385",
+    "flag": "🇭🇷",
+    "continent": "Europe",
+    "languages": [
+      "Croatian"
+    ],
+    "timeZones": "CET/CEST (UTC+1/+2)",
+    "description": "Call Croatia using ZippCall—reliable, low-cost browser-based calls to landlines and mobiles.",
+    "callTips": "Best time to call is between 9am and 6pm local time. Croatia observes daylight saving time.",
+    "businessInfo": "Work hours are typically Monday to Friday, 8am to 4pm. Croatian is used in business.",
+    "popularCities": [
+      {
+        "name": "Zagreb",
+        "description": "The capital and largest city, center for government and economy."
+      },
+      {
+        "name": "Split",
+        "description": "A coastal city known for tourism, trade, and history."
+      },
+      {
+        "name": "Rijeka",
+        "description": "A major port and industrial hub."
+      },
+      {
+        "name": "Osijek",
+        "description": "An eastern city with strong education and agricultural sectors."
+      },
+      {
+        "name": "Zadar",
+        "description": "Historic city and growing destination for investment."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial Croatia?",
+        "answer": "Dial your exit code, then +385 and the number without leading 0."
+      },
+      {
+        "question": "Are ZippCall rates competitive?",
+        "answer": "Yes, ZippCall offers flat, affordable rates to Croatia."
+      },
+      {
+        "question": "Is an app required?",
+        "answer": "No, ZippCall is browser-based—no download required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Croatia | ZippCall Online",
+      "description": "Make affordable calls to Croatia from your browser with ZippCall. No app required.",
+      "keywords": [
+        "call Croatia",
+        "cheap Croatia calls",
+        "international calls Croatia"
+      ]
+    }
+  },
+  {
+    "id": "cuba",
+    "name": "Cuba",
+    "code": "CU",
+    "dialCode": "+53",
+    "flag": "🇨🇺",
+    "continent": "North America",
+    "languages": [
+      "Spanish"
+    ],
+    "timeZones": "CST/CDT (UTC−5/−4)",
+    "description": "Use ZippCall for cost-effective browser-based calls to Cuba. No apps or downloads needed.",
+    "callTips": "Best time to call Cuba is 9am to 5pm local time. Cuba observes daylight saving time.",
+    "businessInfo": "Typical work hours are 8am to 5pm, Monday to Friday. Communication is formal.",
+    "popularCities": [
+      {
+        "name": "Havana",
+        "description": "The capital and economic center of Cuba."
+      },
+      {
+        "name": "Santiago de Cuba",
+        "description": "A key port and cultural city in the southeast."
+      },
+      {
+        "name": "Camagüey",
+        "description": "A historic inland city with colonial charm."
+      },
+      {
+        "name": "Holguín",
+        "description": "An eastern city with tourism and sugar industry."
+      },
+      {
+        "name": "Santa Clara",
+        "description": "Known for history, revolution, and education."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Cuba?",
+        "answer": "Dial your exit code, then +53 and the local number."
+      },
+      {
+        "question": "Is calling Cuba expensive?",
+        "answer": "ZippCall offers competitive rates compared to traditional providers."
+      },
+      {
+        "question": "Do I need to install anything?",
+        "answer": "No, ZippCall works fully in your browser."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Cuba | ZippCall Browser-Based",
+      "description": "Call Cuba from your browser with ZippCall. Reliable international calling at low cost.",
+      "keywords": [
+        "call Cuba",
+        "cheap Cuba calls",
+        "international calls Cuba"
+      ]
+    }
+  },
+  {
+    "id": "cyprus",
+    "name": "Cyprus",
+    "code": "CY",
+    "dialCode": "+357",
+    "flag": "🇨🇾",
+    "continent": "Europe",
+    "languages": [
+      "Greek",
+      "Turkish"
+    ],
+    "timeZones": "EET/EEST (UTC+2/+3)",
+    "description": "ZippCall makes calling Cyprus easy and affordable. Connect from your browser with no downloads required.",
+    "callTips": "Best time to call is between 9am and 6pm local time. Cyprus observes daylight saving time.",
+    "businessInfo": "Business hours are typically Monday to Friday, 8am to 5pm. English is commonly used in commerce.",
+    "popularCities": [
+      {
+        "name": "Nicosia",
+        "description": "The divided capital city and administrative center."
+      },
+      {
+        "name": "Limassol",
+        "description": "A financial hub and port city on the southern coast."
+      },
+      {
+        "name": "Larnaca",
+        "description": "Home to the main international airport and tourism."
+      },
+      {
+        "name": "Paphos",
+        "description": "A west coast city known for ancient history and resorts."
+      },
+      {
+        "name": "Famagusta",
+        "description": "Located in the Turkish-administered north with trade and tourism."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial Cyprus?",
+        "answer": "Dial your country’s exit code, then +357 and the local number."
+      },
+      {
+        "question": "Is it cheap to call Cyprus?",
+        "answer": "Yes, ZippCall offers low rates to both landlines and mobiles."
+      },
+      {
+        "question": "Do I need an app or installation?",
+        "answer": "No, ZippCall is browser-based—no app required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Cyprus | ZippCall Browser Calls",
+      "description": "Call Cyprus online with ZippCall. Reliable browser-based calling to mobile and landline numbers.",
+      "keywords": [
+        "call Cyprus",
+        "cheap Cyprus calls",
+        "international calls Cyprus"
+      ]
+    }
+  },
+  {
+    "id": "czech-republic",
+    "name": "Czech Republic",
+    "code": "CZ",
+    "dialCode": "+420",
+    "flag": "🇨🇿",
+    "continent": "Europe",
+    "languages": [
+      "Czech"
+    ],
+    "timeZones": "CET/CEST (UTC+1/+2)",
+    "description": "Use ZippCall to reach the Czech Republic affordably. Call mobiles and landlines from your browser—no downloads needed.",
+    "callTips": "Best time to call is between 9am and 6pm local time. Czech Republic observes daylight saving time.",
+    "businessInfo": "Typical business hours are 8am to 4pm, Monday to Friday. Business communication is formal.",
+    "popularCities": [
+      {
+        "name": "Prague",
+        "description": "The capital and largest city, known for finance, tourism, and tech."
+      },
+      {
+        "name": "Brno",
+        "description": "The second-largest city and hub for law and technology."
+      },
+      {
+        "name": "Ostrava",
+        "description": "An industrial city in the northeast."
+      },
+      {
+        "name": "Plzeň",
+        "description": "Famous for beer production and manufacturing."
+      },
+      {
+        "name": "Liberec",
+        "description": "A regional center near the borders of Germany and Poland."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call the Czech Republic?",
+        "answer": "Dial your exit code, then +420 followed by the local number."
+      },
+      {
+        "question": "Are ZippCall rates competitive for Czech Republic?",
+        "answer": "Yes, ZippCall offers flat, low-cost international rates."
+      },
+      {
+        "question": "Do I need an app to use ZippCall?",
+        "answer": "No, ZippCall works fully in your browser."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Czech Republic | ZippCall Online",
+      "description": "Call Czech Republic online with ZippCall. Affordable browser-based international calling.",
+      "keywords": [
+        "call Czech Republic",
+        "cheap Czech calls",
+        "international calls Czech Republic"
+      ]
+    }
+  },
+  {
+    "id": "denmark",
+    "name": "Denmark",
+    "code": "DK",
+    "dialCode": "+45",
+    "flag": "🇩🇰",
+    "continent": "Europe",
+    "languages": [
+      "Danish"
+    ],
+    "timeZones": "CET/CEST (UTC+1/+2)",
+    "description": "Use ZippCall to make low-cost calls to Denmark. Connect from your browser—no downloads needed.",
+    "callTips": "Best time to call is 9am to 6pm local time. Denmark observes daylight saving time.",
+    "businessInfo": "Typical business hours are Monday to Friday, 8am to 4pm. English is widely spoken in business.",
+    "popularCities": [
+      {
+        "name": "Copenhagen",
+        "description": "The capital and economic center of Denmark."
+      },
+      {
+        "name": "Aarhus",
+        "description": "A university city with a growing tech and cultural scene."
+      },
+      {
+        "name": "Odense",
+        "description": "Known for history, education, and innovation."
+      },
+      {
+        "name": "Aalborg",
+        "description": "An industrial and university city in the north."
+      },
+      {
+        "name": "Esbjerg",
+        "description": "A port city with strong ties to offshore energy."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Denmark?",
+        "answer": "Dial your exit code, then +45 followed by the 8-digit number."
+      },
+      {
+        "question": "Are calls to Denmark affordable on ZippCall?",
+        "answer": "Yes, ZippCall offers flat low rates to both mobile and landline numbers."
+      },
+      {
+        "question": "Do I need to install anything?",
+        "answer": "No, ZippCall works in your browser—no software required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Denmark | ZippCall Online",
+      "description": "Call Denmark at low cost using ZippCall. Browser-based calling—no apps required.",
+      "keywords": [
+        "call Denmark",
+        "cheap Denmark calls",
+        "international calls Denmark"
+      ]
+    }
+  },
+  {
+    "id": "djibouti",
+    "name": "Djibouti",
+    "code": "DJ",
+    "dialCode": "+253",
+    "flag": "🇩🇯",
+    "continent": "Africa",
+    "languages": [
+      "French",
+      "Arabic"
+    ],
+    "timeZones": "EAT (UTC+3)",
+    "description": "Call Djibouti from your browser with ZippCall. Affordable international calls—no app needed.",
+    "callTips": "Best time to call is 9am to 5pm EAT. Djibouti does not observe daylight saving time.",
+    "businessInfo": "Business hours are Monday to Thursday and Saturday, 7:30am to 2:30pm. French and Arabic are commonly used.",
+    "popularCities": [
+      {
+        "name": "Djibouti City",
+        "description": "The capital and main economic and port city."
+      },
+      {
+        "name": "Ali Sabieh",
+        "description": "A key city near the Ethiopian border."
+      },
+      {
+        "name": "Tadjourah",
+        "description": "Known for its historic significance and proximity to the Gulf."
+      },
+      {
+        "name": "Obock",
+        "description": "A coastal town with ferry access to Djibouti City."
+      },
+      {
+        "name": "Dikhil",
+        "description": "A town serving regional trade and agriculture."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial Djibouti?",
+        "answer": "Dial your exit code, then +253 and the local number."
+      },
+      {
+        "question": "Are rates to Djibouti expensive?",
+        "answer": "ZippCall provides affordable rates to both mobile and landline numbers."
+      },
+      {
+        "question": "Do I need to install ZippCall?",
+        "answer": "No, it's browser-based. No app required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Djibouti | ZippCall Browser-Based",
+      "description": "Call Djibouti with ZippCall. Low-cost, browser-based calling—no downloads needed.",
+      "keywords": [
+        "call Djibouti",
+        "cheap Djibouti calls",
+        "international calls Djibouti"
+      ]
+    }
+  },
+  {
+    "id": "dominica",
+    "name": "Dominica",
+    "code": "DM",
+    "dialCode": "+1-767",
+    "flag": "🇩🇲",
+    "continent": "North America",
+    "languages": [
+      "English"
+    ],
+    "timeZones": "AST (UTC−4)",
+    "description": "Make low-cost browser-based calls to Dominica with ZippCall. No software or downloads required.",
+    "callTips": "Best time to call is 9am to 5pm AST. Dominica does not observe daylight saving time.",
+    "businessInfo": "Work hours are typically Monday to Friday, 8am to 4pm. English is the primary business language.",
+    "popularCities": [
+      {
+        "name": "Roseau",
+        "description": "The capital and economic center of Dominica."
+      },
+      {
+        "name": "Portsmouth",
+        "description": "Second-largest town with trade and education institutions."
+      },
+      {
+        "name": "Marigot",
+        "description": "A key northern town near the airport."
+      },
+      {
+        "name": "Mahaut",
+        "description": "A growing community west of the capital."
+      },
+      {
+        "name": "La Plaine",
+        "description": "A village with agriculture and tourism."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Dominica?",
+        "answer": "Dial +1-767 followed by the 7-digit number."
+      },
+      {
+        "question": "Are ZippCall rates low for Dominica?",
+        "answer": "Yes, ZippCall provides affordable calling rates to Dominica."
+      },
+      {
+        "question": "Do I need an app to use ZippCall?",
+        "answer": "No, ZippCall is fully browser-based."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Dominica | ZippCall Online",
+      "description": "Call Dominica from your browser with ZippCall. No app required—just low-cost international calling.",
+      "keywords": [
+        "call Dominica",
+        "cheap Dominica calls",
+        "international calls Dominica"
+      ]
+    }
+  },
+  {
+    "id": "dominican-republic",
+    "name": "Dominican Republic",
+    "code": "DO",
+    "dialCode": "+1-809/+1-829/+1-849",
+    "flag": "🇩🇴",
+    "continent": "North America",
+    "languages": [
+      "Spanish"
+    ],
+    "timeZones": "AST (UTC−4)",
+    "description": "Call the Dominican Republic affordably with ZippCall. Browser-based calls—no downloads required.",
+    "callTips": "Best time to call is between 9am and 6pm AST.",
+    "businessInfo": "Business hours are Monday to Friday, 8am to 5pm. Spanish is the language of business.",
+    "popularCities": [
+      {
+        "name": "Santo Domingo",
+        "description": "The capital and commercial center of the country."
+      },
+      {
+        "name": "Santiago de los Caballeros",
+        "description": "The second-largest city and industrial hub."
+      },
+      {
+        "name": "La Romana",
+        "description": "Known for tourism, sugar, and manufacturing."
+      },
+      {
+        "name": "San Pedro de Macorís",
+        "description": "A coastal city with universities and trade."
+      },
+      {
+        "name": "Punta Cana",
+        "description": "A resort area known for beaches and tourism."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call the Dominican Republic?",
+        "answer": "Dial +1 and one of the area codes (809, 829, 849) followed by the 7-digit number."
+      },
+      {
+        "question": "Is calling the Dominican Republic cheap?",
+        "answer": "Yes, ZippCall offers low-cost international calling."
+      },
+      {
+        "question": "Is software installation required?",
+        "answer": "No, ZippCall works from your browser—no app needed."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Dominican Republic | ZippCall",
+      "description": "Make browser-based calls to the Dominican Republic with ZippCall. No downloads, just low rates.",
+      "keywords": [
+        "call Dominican Republic",
+        "cheap Dominican calls",
+        "international calls Dominican Republic"
+      ]
+    }
+  },
+  {
+    "id": "dr-congo",
+    "name": "DR Congo",
+    "code": "CD",
+    "dialCode": "+243",
+    "flag": "🇨🇩",
+    "continent": "Africa",
+    "languages": [
+      "French"
+    ],
+    "timeZones": "CAT (UTC+2)",
+    "description": "ZippCall lets you call DR Congo at affordable rates. No apps or downloads—just browser-based calls.",
+    "callTips": "Best time to call is 9am to 6pm CAT.",
+    "businessInfo": "Business is conducted Monday to Friday, 8am to 5pm. French is used in official communication.",
+    "popularCities": [
+      {
+        "name": "Kinshasa",
+        "description": "The capital and largest city, on the Congo River."
+      },
+      {
+        "name": "Lubumbashi",
+        "description": "Mining and industrial city in the south."
+      },
+      {
+        "name": "Mbuji-Mayi",
+        "description": "Major diamond mining region."
+      },
+      {
+        "name": "Goma",
+        "description": "Eastern city near the Rwandan border and Lake Kivu."
+      },
+      {
+        "name": "Kisangani",
+        "description": "A trade and transport hub in the northeast."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I dial DR Congo?",
+        "answer": "Dial your exit code, then +243 followed by the local number."
+      },
+      {
+        "question": "Are ZippCall rates good for DR Congo?",
+        "answer": "Yes, they’re affordable for both mobile and landline calls."
+      },
+      {
+        "question": "Do I need an app to call DR Congo?",
+        "answer": "No, ZippCall is browser-based and requires no installation."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to DR Congo | ZippCall Online",
+      "description": "Call DR Congo online with ZippCall. Low-cost browser-based calling to mobile and landline numbers.",
+      "keywords": [
+        "call DR Congo",
+        "cheap Congo calls",
+        "international calls DR Congo"
+      ]
+    }
+  },
+  {
+    "id": "east-timor",
+    "name": "East Timor",
+    "code": "TL",
+    "dialCode": "+670",
+    "flag": "🇹🇱",
+    "continent": "Asia",
+    "languages": [
+      "Tetum",
+      "Portuguese"
+    ],
+    "timeZones": "TLT (UTC+9)",
+    "description": "ZippCall lets you make low-cost calls to East Timor directly from your browser—no software needed.",
+    "callTips": "Best time to call is 9am to 5pm TLT.",
+    "businessInfo": "Typical hours are Monday to Friday, 8am to 5pm. Portuguese and Tetum are used in business.",
+    "popularCities": [
+      {
+        "name": "Dili",
+        "description": "The capital and main economic and political hub."
+      },
+      {
+        "name": "Baucau",
+        "description": "Second-largest city known for agriculture and trade."
+      },
+      {
+        "name": "Maliana",
+        "description": "A western town close to the Indonesian border."
+      },
+      {
+        "name": "Suai",
+        "description": "Emerging oil and logistics region in the south."
+      },
+      {
+        "name": "Lospalos",
+        "description": "An eastern city with cultural and historical importance."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call East Timor?",
+        "answer": "Dial your exit code, then +670 and the local number."
+      },
+      {
+        "question": "Are ZippCall rates affordable?",
+        "answer": "Yes, ZippCall offers low-cost browser-based calling."
+      },
+      {
+        "question": "Is installation required?",
+        "answer": "No, ZippCall works 100% online—no app needed."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to East Timor | ZippCall Browser Calling",
+      "description": "Call East Timor at low cost using ZippCall. No app or downloads—just browser calling.",
+      "keywords": [
+        "call East Timor",
+        "cheap East Timor calls",
+        "international calls East Timor"
+      ]
+    }
+  },
+  {
+    "id": "ecuador",
+    "name": "Ecuador",
+    "code": "EC",
+    "dialCode": "+593",
+    "flag": "🇪🇨",
+    "continent": "South America",
+    "languages": [
+      "Spanish"
+    ],
+    "timeZones": "ECT (UTC−5)",
+    "description": "Make affordable calls to Ecuador with ZippCall—no apps or downloads needed.",
+    "callTips": "Best time to call Ecuador is 9am to 6pm ECT.",
+    "businessInfo": "Monday to Friday, 8am to 5pm. Spanish is used in professional communication.",
+    "popularCities": [
+      {
+        "name": "Quito",
+        "description": "The capital city located high in the Andes."
+      },
+      {
+        "name": "Guayaquil",
+        "description": "Main port and largest economic center."
+      },
+      {
+        "name": "Cuenca",
+        "description": "A historic city popular with expats and tourists."
+      },
+      {
+        "name": "Santo Domingo",
+        "description": "A major agricultural and transport hub."
+      },
+      {
+        "name": "Machala",
+        "description": "Key banana export city near the coast."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Ecuador?",
+        "answer": "Dial your exit code, then +593 and the local number."
+      },
+      {
+        "question": "Are Ecuador calls via ZippCall low-cost?",
+        "answer": "Yes, ZippCall offers affordable rates to mobiles and landlines."
+      },
+      {
+        "question": "Is ZippCall browser-based?",
+        "answer": "Yes, it works fully in your browser—no installation."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Ecuador | ZippCall Online",
+      "description": "Call Ecuador easily with ZippCall. Low-cost international browser-based calling.",
+      "keywords": [
+        "call Ecuador",
+        "cheap Ecuador calls",
+        "international calls Ecuador"
+      ]
+    }
+  },
+  {
+    "id": "egypt",
+    "name": "Egypt",
+    "code": "EG",
+    "dialCode": "+20",
+    "flag": "🇪🇬",
+    "continent": "Africa",
+    "languages": [
+      "Arabic"
+    ],
+    "timeZones": "EET (UTC+2)",
+    "description": "Call Egypt at competitive rates with ZippCall—no app required, just your browser.",
+    "callTips": "Best time to call is 9am to 6pm EET.",
+    "businessInfo": "Work hours are 9am to 5pm Sunday to Thursday. Arabic is used in most business contexts.",
+    "popularCities": [
+      {
+        "name": "Cairo",
+        "description": "The capital and largest city, business and political hub."
+      },
+      {
+        "name": "Alexandria",
+        "description": "Historic Mediterranean port city."
+      },
+      {
+        "name": "Giza",
+        "description": "Known for the pyramids and urban industry."
+      },
+      {
+        "name": "Sharm El Sheikh",
+        "description": "Tourism-driven city on the Red Sea."
+      },
+      {
+        "name": "Aswan",
+        "description": "Southern city with cultural and historical sites."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Egypt?",
+        "answer": "Dial your exit code, then +20 and the local number."
+      },
+      {
+        "question": "Are calls to Egypt affordable?",
+        "answer": "Yes, ZippCall offers competitive international rates."
+      },
+      {
+        "question": "Do I need to download ZippCall?",
+        "answer": "No, just use your browser—ZippCall is app-free."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Egypt | ZippCall Browser-Based",
+      "description": "Make low-cost international calls to Egypt using ZippCall. 100% browser-based, no downloads.",
+      "keywords": [
+        "call Egypt",
+        "cheap Egypt calls",
+        "international calls Egypt"
+      ]
+    }
+  },
+  {
+    "id": "el-salvador",
+    "name": "El Salvador",
+    "code": "SV",
+    "dialCode": "+503",
+    "flag": "🇸🇻",
+    "continent": "North America",
+    "languages": [
+      "Spanish"
+    ],
+    "timeZones": "CST (UTC−6)",
+    "description": "Use ZippCall to make calls to El Salvador—affordable and fully browser-based.",
+    "callTips": "Best time to call is 9am to 6pm CST.",
+    "businessInfo": "Workweek is Monday to Friday, 8am to 5pm. Spanish is the business language.",
+    "popularCities": [
+      {
+        "name": "San Salvador",
+        "description": "The capital and economic center of El Salvador."
+      },
+      {
+        "name": "Santa Ana",
+        "description": "Second-largest city known for commerce and industry."
+      },
+      {
+        "name": "San Miguel",
+        "description": "Important city in the east with vibrant business."
+      },
+      {
+        "name": "Soyapango",
+        "description": "A populous urban area near San Salvador."
+      },
+      {
+        "name": "La Libertad",
+        "description": "A coastal area known for surfing and development."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call El Salvador?",
+        "answer": "Dial your exit code, then +503 followed by the number."
+      },
+      {
+        "question": "Are ZippCall rates to El Salvador low?",
+        "answer": "Yes, ZippCall offers budget-friendly international rates."
+      },
+      {
+        "question": "Is ZippCall online only?",
+        "answer": "Yes, use it directly in your browser."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to El Salvador | ZippCall Online",
+      "description": "Call El Salvador online using ZippCall. No app needed, low-cost browser-based calling.",
+      "keywords": [
+        "call El Salvador",
+        "cheap El Salvador calls",
+        "international calls El Salvador"
+      ]
+    }
+  },
+  {
+    "id": "equatorial-guinea",
+    "name": "Equatorial Guinea",
+    "code": "GQ",
+    "dialCode": "+240",
+    "flag": "🇬🇶",
+    "continent": "Africa",
+    "languages": [
+      "Spanish",
+      "French",
+      "Portuguese"
+    ],
+    "timeZones": "WAT (UTC+1)",
+    "description": "Call Equatorial Guinea using ZippCall—low-cost and browser-based international calling.",
+    "callTips": "Best time to call is 9am to 5pm WAT.",
+    "businessInfo": "Business hours run Monday to Friday, 8am to 5pm. Spanish is the main working language.",
+    "popularCities": [
+      {
+        "name": "Malabo",
+        "description": "The capital on Bioko Island and center of administration."
+      },
+      {
+        "name": "Bata",
+        "description": "The largest mainland city with business and oil industry presence."
+      },
+      {
+        "name": "Ebebiyin",
+        "description": "A city near the borders of Cameroon and Gabon."
+      },
+      {
+        "name": "Luba",
+        "description": "A port city on Bioko Island."
+      },
+      {
+        "name": "Mikomeseng",
+        "description": "A town known for agriculture and local trade."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Equatorial Guinea?",
+        "answer": "Dial your country’s exit code, then +240 and the local number."
+      },
+      {
+        "question": "Is ZippCall affordable for Equatorial Guinea?",
+        "answer": "Yes, ZippCall offers low international rates for mobile and landline numbers."
+      },
+      {
+        "question": "Is ZippCall an app?",
+        "answer": "No, it’s browser-based—no installation needed."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Equatorial Guinea | ZippCall",
+      "description": "Call Equatorial Guinea online with ZippCall. No app, just low-cost browser calling.",
+      "keywords": [
+        "call Equatorial Guinea",
+        "cheap Equatorial Guinea calls",
+        "international calls Equatorial Guinea"
+      ]
+    }
+  },
+  {
+    "id": "eritrea",
+    "name": "Eritrea",
+    "code": "ER",
+    "dialCode": "+291",
+    "flag": "🇪🇷",
+    "continent": "Africa",
+    "languages": [
+      "Tigrinya",
+      "Arabic",
+      "English"
+    ],
+    "timeZones": "EAT (UTC+3)",
+    "description": "Use ZippCall to connect with Eritrea—affordable browser-based calling, no downloads.",
+    "callTips": "Best time to call is between 9am and 5pm EAT.",
+    "businessInfo": "Typical hours are Monday to Friday, 8am to 5pm. English and Tigrinya are commonly used.",
+    "popularCities": [
+      {
+        "name": "Asmara",
+        "description": "The capital and administrative center."
+      },
+      {
+        "name": "Massawa",
+        "description": "Historic port city on the Red Sea."
+      },
+      {
+        "name": "Keren",
+        "description": "A highland city with growing trade."
+      },
+      {
+        "name": "Assab",
+        "description": "Port city in the south near the Ethiopian border."
+      },
+      {
+        "name": "Mendefera",
+        "description": "A regional town with agricultural activity."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Eritrea?",
+        "answer": "Dial your exit code, then +291 and the local number."
+      },
+      {
+        "question": "Are ZippCall rates low for Eritrea?",
+        "answer": "Yes, ZippCall provides competitive international rates."
+      },
+      {
+        "question": "Is ZippCall app-based?",
+        "answer": "No, it works fully in your browser—no app required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Eritrea | ZippCall Online",
+      "description": "Call Eritrea using ZippCall. Low-cost, browser-based calling—no downloads.",
+      "keywords": [
+        "call Eritrea",
+        "cheap Eritrea calls",
+        "international calls Eritrea"
+      ]
+    }
+  },
+  {
+    "id": "estonia",
+    "name": "Estonia",
+    "code": "EE",
+    "dialCode": "+372",
+    "flag": "🇪🇪",
+    "continent": "Europe",
+    "languages": [
+      "Estonian"
+    ],
+    "timeZones": "EET/EEST (UTC+2/+3)",
+    "description": "ZippCall offers cheap international calls to Estonia. Use your browser—no apps or downloads.",
+    "callTips": "Best time to call is 9am to 6pm local time.",
+    "businessInfo": "Business hours are Monday to Friday, 9am to 5pm. English is widely spoken.",
+    "popularCities": [
+      {
+        "name": "Tallinn",
+        "description": "The capital and tech innovation hub."
+      },
+      {
+        "name": "Tartu",
+        "description": "A university city with strong research and culture."
+      },
+      {
+        "name": "Narva",
+        "description": "A city on the Russian border with strong trade."
+      },
+      {
+        "name": "Pärnu",
+        "description": "Known for tourism and seaside resorts."
+      },
+      {
+        "name": "Viljandi",
+        "description": "A scenic town with rich cultural heritage."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Estonia?",
+        "answer": "Dial your country’s exit code, then +372 and the local number."
+      },
+      {
+        "question": "Are calls to Estonia expensive?",
+        "answer": "No, ZippCall offers low-cost rates for all numbers."
+      },
+      {
+        "question": "Do I need to install anything?",
+        "answer": "No, ZippCall is browser-based—no software required."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Estonia | ZippCall Online",
+      "description": "Call Estonia with ZippCall. No app needed—just low-cost international calling from your browser.",
+      "keywords": [
+        "call Estonia",
+        "cheap Estonia calls",
+        "international calls Estonia"
+      ]
+    }
+  },
+  {
+    "id": "ethiopia",
+    "name": "Ethiopia",
+    "code": "ET",
+    "dialCode": "+251",
+    "flag": "🇪🇹",
+    "continent": "Africa",
+    "languages": [
+      "Amharic"
+    ],
+    "timeZones": "EAT (UTC+3)",
+    "description": "Call Ethiopia from your browser with ZippCall—affordable, reliable, and no app required.",
+    "callTips": "Best time to call is 9am to 6pm EAT.",
+    "businessInfo": "Work hours are typically Monday to Friday, 8:30am to 5:30pm. Amharic is widely spoken.",
+    "popularCities": [
+      {
+        "name": "Addis Ababa",
+        "description": "The capital and headquarters of the African Union."
+      },
+      {
+        "name": "Dire Dawa",
+        "description": "An important trade and industrial city."
+      },
+      {
+        "name": "Mekelle",
+        "description": "A northern city with strategic and cultural importance."
+      },
+      {
+        "name": "Bahir Dar",
+        "description": "A lakeside city and regional capital."
+      },
+      {
+        "name": "Gondar",
+        "description": "A historic city known for castles and tourism."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I call Ethiopia?",
+        "answer": "Dial your exit code, then +251 and the local number."
+      },
+      {
+        "question": "Is it expensive to call Ethiopia?",
+        "answer": "Not with ZippCall—our rates are affordable."
+      },
+      {
+        "question": "Do I need an app to use ZippCall?",
+        "answer": "No, ZippCall is 100% browser-based."
+      }
+    ],
+    "meta": {
+      "title": "Cheap Calls to Ethiopia | ZippCall Browser-Based",
+      "description": "Call Ethiopia online using ZippCall. Browser-based, no software needed, affordable international rates.",
+      "keywords": [
+        "call Ethiopia",
+        "cheap Ethiopia calls",
+        "international calls Ethiopia"
+      ]
+    }
   }
 ]
