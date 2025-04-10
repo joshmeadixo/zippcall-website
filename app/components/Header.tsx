@@ -54,16 +54,16 @@ export default function Header() {
         
         {/* Desktop navigation */}
         <nav className="hidden md:flex space-x-6">
-          <Link href="#features" className="text-zippcall-blue hover:text-zippcall-light-blue font-bold transition-colors text-sm">
+          <Link href="/#features" className="text-zippcall-blue hover:text-zippcall-light-blue font-bold transition-colors text-sm">
             Features
           </Link>
-          <Link href="#how-it-works" className="text-zippcall-blue hover:text-zippcall-light-blue font-bold transition-colors text-sm">
+          <Link href="/#how-it-works" className="text-zippcall-blue hover:text-zippcall-light-blue font-bold transition-colors text-sm">
             How It Works
           </Link>
-          <Link href="#pricing" className="text-zippcall-blue hover:text-zippcall-light-blue font-bold transition-colors text-sm">
+          <Link href="/#pricing" className="text-zippcall-blue hover:text-zippcall-light-blue font-bold transition-colors text-sm">
             Pricing
           </Link>
-          <Link href="#faq" className="text-zippcall-blue hover:text-zippcall-light-blue font-bold transition-colors text-sm">
+          <Link href="/#faq" className="text-zippcall-blue hover:text-zippcall-light-blue font-bold transition-colors text-sm">
             FAQ
           </Link>
         </nav>
@@ -95,28 +95,28 @@ export default function Header() {
         <div className="px-4 py-3 bg-white border-t border-gray-100">
           <nav className="flex flex-col space-y-3">
             <Link 
-              href="#features" 
+              href="/#features" 
               className="text-zippcall-blue font-bold py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Features
             </Link>
             <Link 
-              href="#how-it-works" 
+              href="/#how-it-works" 
               className="text-zippcall-blue font-bold py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               How It Works
             </Link>
             <Link 
-              href="#pricing" 
+              href="/#pricing" 
               className="text-zippcall-blue font-bold py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Pricing
             </Link>
             <Link 
-              href="#faq" 
+              href="/#faq" 
               className="text-zippcall-blue font-bold py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
