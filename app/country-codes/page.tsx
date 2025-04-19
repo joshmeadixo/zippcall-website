@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Metadata } from 'next';
 // Import data directly from the JSON file
 import allCountriesData from '@/app/data/countries.json';
@@ -151,6 +151,7 @@ function FAQItem({ question, answer, isOpen, toggleOpen }: FAQItemProps) {
 
 export default function CountryCodesPage() {
   const [openItem, setOpenItem] = useState(0); // Start with first item open
+  const [searchTerm, setSearchTerm] = useState(""); // State for search term
   
   // FAQs data structure for the UI
   const faqItems = [
@@ -200,6 +201,19 @@ export default function CountryCodesPage() {
     },
   ];
   
+  // Filter countries based on search term
+  const filteredCountries = useMemo(() => {
+    if (!searchTerm) {
+      return countryCodes; // Return all if no search term
+    }
+    const lowerCaseSearchTerm = searchTerm.toLowerCase();
+    return countryCodes.filter(country => 
+      country.name.toLowerCase().includes(lowerCaseSearchTerm) ||
+      country.code.toLowerCase().includes(lowerCaseSearchTerm) ||
+      country.dialCode.toLowerCase().includes(lowerCaseSearchTerm)
+    );
+  }, [searchTerm]);
+
   return (
     <main>
       {/* Add JSON-LD Script for FAQ Schema */}
@@ -244,6 +258,17 @@ export default function CountryCodesPage() {
               Browse all international dialing codes below to find the code you need.
             </p>
 
+            {/* Search Input */}
+            <div className="mb-6">
+              <input 
+                type="text"
+                placeholder="Search by country name, code, or dialing code..."
+                className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-zippcall-blue focus:border-zippcall-blue"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
+
             {/* Country Codes Table */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-zippcall-light-blue/20">
               <div className="overflow-x-auto">
@@ -255,22 +280,28 @@ export default function CountryCodesPage() {
                       <th scope="col" className="py-4 px-6">ISO Code</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    {countryCodes.map((country) => (
-                      <tr key={country.code} className="border-b border-gray-200 hover:bg-zippcall-cream/50 transition-colors">
-                        <th scope="row" className="py-4 px-6 font-medium text-zippcall-blue">
+                  <tbody className="divide-y divide-gray-200">
+                    {filteredCountries.map((country) => (
+                      <tr key={country.code} className="hover:bg-gray-50">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                           {country.name}
-                        </th>
-                        <td className="py-4 px-6 font-medium text-zippcall-neutral">
-                          {country.dialCode}
                         </td>
-                        <td className="py-4 px-6 text-zippcall-neutral">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           {country.code}
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          {country.dialCode}
                         </td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
+                {/* Add a message if no results found */}
+                {filteredCountries.length === 0 && (
+                  <div className="text-center p-6 text-gray-500">
+                    No countries found matching your search.
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -290,6 +321,82 @@ export default function CountryCodesPage() {
           >
             START CALLING NOW
           </a>
+        </div>
+      </section>
+
+      {/* Main content */}
+      <section className="py-12 bg-zippcall-cream">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-zippcall-blue mb-4 text-center">
+              Complete Country Codes List
+            </h2>
+            <p className="text-center text-zippcall-neutral mb-8">
+              Browse all international dialing codes below to find the code you need.
+            </p>
+
+            {/* Search Input */}
+            <div className="mb-6">
+              <input 
+                type="text"
+                placeholder="Search by country name, code, or dialing code..."
+                className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-zippcall-blue focus:border-zippcall-blue"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
+
+            {/* Country Codes Table */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-zippcall-light-blue/20">
+              <div className="overflow-x-auto">
+                <table className="w-full text-left">
+                  <thead className="bg-zippcall-blue text-white text-sm uppercase">
+                    <tr>
+                      <th scope="col" className="py-4 px-6">Country Name</th>
+                      <th scope="col" className="py-4 px-6">Dialing Code</th>
+                      <th scope="col" className="py-4 px-6">ISO Code</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {filteredCountries.map((country) => (
+                      <tr key={country.code} className="hover:bg-gray-50">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                          {country.name}
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          {country.code}
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          {country.dialCode}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                {/* Add a message if no results found */}
+                {filteredCountries.length === 0 && (
+                  <div className="text-center p-6 text-gray-500">
+                    No countries found matching your search.
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* FAQ section moved to the bottom */}
+          <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 border border-zippcall-light-blue/20 mt-12">
+            <h2 className="text-2xl font-bold text-zippcall-blue mb-6">Frequently Asked Questions</h2>
+            
+            {faqItems.map((item, index) => (
+              <FAQItem 
+                key={index}
+                question={item.question}
+                answer={item.answer}
+                isOpen={openItem === index}
+                toggleOpen={() => setOpenItem(openItem === index ? -1 : index)}
+              />
+            ))}
+          </div>
         </div>
       </section>
     </main>
