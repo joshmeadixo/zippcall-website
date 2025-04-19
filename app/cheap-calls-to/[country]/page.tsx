@@ -118,7 +118,7 @@ export default async function Page({ params }: PageProps) {
   const liveRate = await fetchPricingData(countryCode);
   
   // Use the live rate if available, otherwise fallback to null
-  const rate = liveRate ? liveRate.toFixed(4) : null;
+  const rate = liveRate ? liveRate.toFixed(2) : null;
   const baseUrl = 'https://www.zippcall.com'; // Assuming this is your base URL
   const pageUrl = `${baseUrl}/cheap-calls-to/${country}`;
 

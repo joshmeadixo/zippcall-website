@@ -301,7 +301,7 @@ export default function Pricing() {
               <div>
                 {initialError && <p className="text-xs text-orange-500 mb-2">Could not load live rate, showing estimate.</p>}
                 <p className="text-lg text-zippcall-neutral">
-                  Rate for <span className="font-bold text-zippcall-blue">{selectedCountryName}</span>: <span className="font-bold text-zippcall-blue">${currentRate.toFixed(4)}</span>/minute
+                  Rate for <span className="font-bold text-zippcall-blue">{selectedCountryName}</span>: <span className="font-bold text-zippcall-blue">${currentRate.toFixed(2)}</span>/minute
                 </p>
                 <p className="text-3xl font-bold text-zippcall-blue mt-2">
                   Estimated cost for {minutes} minutes: <span className="text-zippcall-light-blue">${calculatedCost}</span>
