@@ -52,9 +52,7 @@ interface PricingDataEntry {
 // Simplified pricing calculator for the hero section
 export default function Hero() {
   const [selectedCountryName, setSelectedCountryName] = useState("United Kingdom");
-  const [minutes, setMinutes] = useState(5);
   const [currentRate, setCurrentRate] = useState<number | null>(0.15);
-  const [calculatedCost, setCalculatedCost] = useState<string | null>("0.75");
   const [isLoading, setIsLoading] = useState(true);
   const [isUnsupportedCountry, setIsUnsupportedCountry] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
@@ -138,7 +136,6 @@ export default function Hero() {
     if (unsupportedCountries.includes(countryName)) {
       setIsUnsupportedCountry(true);
       setCurrentRate(null);
-      setCalculatedCost(null);
       return;
     }
     
@@ -158,7 +155,6 @@ export default function Hero() {
         const markupRate = entry.basePrice * 2;
         const finalRate = Math.max(markupRate, 0.15);
         setCurrentRate(finalRate);
-        setCalculatedCost((finalRate * minutes).toFixed(2));
         console.log("Rate updated for", countryName, "to", finalRate);
         return;
       }
@@ -167,7 +163,6 @@ export default function Hero() {
     // Fallback to default rate
     console.log("Using fallback rate for", countryName);
     setCurrentRate(0.15);
-    setCalculatedCost((0.15 * minutes).toFixed(2));
   };
 
   // Handle country selection
@@ -178,14 +173,6 @@ export default function Hero() {
     updateCountryRate(countryName);
   };
 
-  // Handle minutes change
-  const handleMinutesChange = (newMinutes: number) => {
-    setMinutes(newMinutes);
-    if (currentRate !== null) {
-      setCalculatedCost((currentRate * newMinutes).toFixed(2));
-    }
-  };
-  
   // Filter countries for dropdown based on search term
   const filteredCountries = useMemo(() => {
     if (!searchTerm) {
@@ -442,46 +429,19 @@ export default function Hero() {
           )}
         </div>
         
-        {/* Price Information */}
-        <div className="mb-3 bg-white p-2 rounded-lg border border-gray-200 text-center">
+        {/* Price Information - Display only rate per minute */}
+        <div className="py-4 px-3 bg-white rounded-lg border border-gray-200 text-center mb-6">
           {isLoading ? (
             <span className="text-sm text-gray-500">Loading rates...</span>
           ) : isUnsupportedCountry ? (
             <span className="text-sm text-orange-500">Sorry, calls to {selectedCountryName} are not supported yet.</span>
           ) : (
             <div>
-              <span className="text-sm text-gray-500 block">Rate:</span>
-              <span className="text-zippcall-blue font-medium text-lg">${currentRate?.toFixed(2)}/min</span>
+              <span className="text-sm text-gray-600 block mb-1">Rate to {selectedCountryName}:</span>
+              <span className="text-2xl font-bold text-zippcall-blue">${currentRate?.toFixed(4)}</span>
+              <span className="text-sm text-gray-600 ml-1">per min</span>
             </div>
           )}
-        </div>
-        
-        {/* Minutes Selector */}
-        <div className="mb-5">
-          <div className="flex justify-between items-center mb-1">
-            <label className="text-sm text-gray-500">Minutes: {minutes}</label>
-            <span className="text-sm font-medium text-zippcall-blue">
-              {isLoading ? "Loading..." : isUnsupportedCountry ? "-" : `$${calculatedCost}`}
-            </span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <button 
-              onClick={() => handleMinutesChange(Math.max(1, minutes - 1))}
-              className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50"
-            >-</button>
-            <input
-              type="range"
-              min="1"
-              max="30"
-              value={minutes}
-              onChange={(e) => handleMinutesChange(Number(e.target.value))}
-              className="flex-1 range range-primary h-2 bg-zippcall-light-blue/20 accent-zippcall-blue rounded-lg"
-            />
-            <button 
-              onClick={() => handleMinutesChange(Math.min(30, minutes + 1))}
-              className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50"
-            >+</button>
-          </div>
         </div>
         
         {/* Call Button */}
