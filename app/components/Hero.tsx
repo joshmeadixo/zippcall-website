@@ -44,7 +44,7 @@ interface CountryOption {
 }
 
 interface PricingDataEntry {
-  basePrice: number;
+  finalPrice: number;
   countryName?: string;
   currency?: string;
 }
@@ -151,11 +151,9 @@ export default function Hero() {
     // Get rate from pricing data
     if (data && selectedCountry.code) {
       const entry = data[selectedCountry.code];
-      if (entry?.basePrice !== undefined && typeof entry.basePrice === 'number') {
-        const markupRate = entry.basePrice * 2;
-        const finalRate = Math.max(markupRate, 0.15);
-        setCurrentRate(finalRate);
-        console.log("Rate updated for", countryName, "to", finalRate);
+      if (entry?.finalPrice !== undefined && typeof entry.finalPrice === 'number') {
+        setCurrentRate(entry.finalPrice);
+        console.log("Rate updated for", countryName, "to", entry.finalPrice);
         return;
       }
     }

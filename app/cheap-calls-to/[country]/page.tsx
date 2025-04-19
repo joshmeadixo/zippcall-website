@@ -26,7 +26,7 @@ type CountryData = {
 };
 
 type PricingDataEntry = {
-  basePrice: number;
+  finalPrice: number;
   countryName?: string;
   currency?: string;
 };
@@ -71,13 +71,6 @@ export function generateStaticParams() {
   return enhancedCountryIds;
 }
 
-// Function to calculate the final rate from the base price
-function calculateFinalRate(basePrice: number | null): number | null {
-  if (basePrice === null) return null;
-  const markupRate = basePrice * 2;
-  return Math.max(markupRate, 0.15);
-}
-
 // Function to fetch pricing data from API
 async function fetchPricingData(countryCode: string): Promise<number | null> {
   try {
@@ -87,8 +80,8 @@ async function fetchPricingData(countryCode: string): Promise<number | null> {
     }
     const data: Record<string, PricingDataEntry> = await response.json();
     
-    if (data && data[countryCode] && typeof data[countryCode].basePrice === 'number') {
-      return calculateFinalRate(data[countryCode].basePrice);
+    if (data && data[countryCode] && typeof data[countryCode].finalPrice === 'number') {
+      return data[countryCode].finalPrice;
     }
     return null;
   } catch (error) {

@@ -84,7 +84,7 @@ interface CountryOption {
 }
 
 interface PricingDataEntry {
-    basePrice: number;
+    finalPrice: number;
     countryName?: string; // Optional name from API
     currency?: string;
 }
@@ -165,8 +165,8 @@ export default function Pricing() {
     const selectedCountryCode = countryListForDropdown.find(c => c.name === selectedCountryName)?.code;
     if (allPricingData && selectedCountryCode) {
         const liveEntry = allPricingData[selectedCountryCode];
-        if (liveEntry?.basePrice !== undefined && typeof liveEntry.basePrice === 'number') {
-            wholesaleRate = liveEntry.basePrice;
+        if (liveEntry?.finalPrice !== undefined && typeof liveEntry.finalPrice === 'number') {
+            wholesaleRate = liveEntry.finalPrice;
         } 
     }
     if (wholesaleRate === null && !isInitialLoading) { 
@@ -177,8 +177,7 @@ export default function Pricing() {
     }
     let finalRate: number | null = null;
     if (wholesaleRate !== null) {
-      const markupRate = wholesaleRate * 2;
-      finalRate = Math.max(markupRate, 0.15);
+      finalRate = wholesaleRate;
     }
     setCurrentRate(finalRate);
   }, [selectedCountryName, allPricingData, isInitialLoading, countryListForDropdown]);
