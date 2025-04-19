@@ -68,7 +68,7 @@ export default function Hero() {
     { code: "IN", name: "India", flag: "🇮🇳" },
   ]);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const [isPhoneBouncing, setIsPhoneBouncing] = useState(true);
+  const [phoneNumber, setPhoneNumber] = useState("+1 8009632111");
 
   // Fetch pricing data
   useEffect(() => {
@@ -193,29 +193,294 @@ export default function Hero() {
   // Get current selected country
   const currentSelectedCountry = countryListForDropdown.find(c => c.name === selectedCountryName);
 
-  // Stop bouncing animation when user interacts with the calculator
+  // Update this function to not depend on the animation state
   const handleFirstInteraction = () => {
-    setIsPhoneBouncing(false);
+    // setIsPhoneBouncing(false);
+  };
+
+  // Render the dial pad UI for the mockups (make it look like the actual app)
+  const renderDialPadUI = (isPhoneVersion = true) => {
+    return (
+      <div className="h-full flex flex-col bg-gray-50">
+        {/* Header: Only shown in desktop version */}
+        {!isPhoneVersion && (
+          <div className="flex justify-between items-center py-2 px-3 bg-white border-b border-gray-100 mb-2">
+            <div className="flex items-center">
+              <Image 
+                src="/images/zippcall-icon.png" 
+                alt="ZippCall" 
+                width={24} 
+                height={24} 
+                className="mr-2"
+              />
+              <span className="text-zippcall-blue font-medium text-sm">ZippCall</span>
+            </div>
+            <button className="text-sm text-white bg-blue-500 px-3 py-1 rounded-md">
+              Sign Out
+            </button>
+          </div>
+        )}
+        
+        {/* Main content */}
+        <div className="flex-1 p-3 flex flex-col">
+          {/* Phone/Balance Tab Headers (for desktop) */}
+          {!isPhoneVersion && (
+            <div className="flex border-b mb-3">
+              <div className="px-4 py-2 text-sm font-medium text-zippcall-blue border-b-2 border-zippcall-blue">
+                Phone
+              </div>
+              <div className="px-4 py-2 text-sm font-medium text-gray-500">
+                Balance
+              </div>
+            </div>
+          )}
+          
+          {/* Country Selector */}
+          <div className="mb-3">
+            <div className="bg-green-50 rounded-lg p-2 border border-green-100 mb-2">
+              <div className="flex justify-between items-center">
+                <span className="text-xs text-gray-600">Selected Country</span>
+                <span className="text-xs text-green-600 bg-green-100 px-2 py-0.5 rounded-full flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-1"></span>
+                  Selected
+                </span>
+              </div>
+              
+              <div className="bg-white rounded-lg border border-gray-200 mt-1 p-2 flex items-center">
+                <span className="text-lg mr-2">🇺🇸</span>
+                <span className="font-medium">UNITED STATES</span>
+                <span className="text-gray-500 ml-1">+1</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-auto text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          {/* Phone Number Display */}
+          <div className="mb-4 relative">
+            <div className="bg-white rounded-lg border border-gray-200 py-3 px-4 text-xl font-medium text-zippcall-blue flex justify-between items-center">
+              {phoneNumber}
+              <button className="bg-gray-200 rounded-full w-6 h-6 flex items-center justify-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          
+          {/* Dial Pad */}
+          <div className="grid grid-cols-3 gap-3 mb-5">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, '*', 0, '#'].map((digit) => (
+              <button 
+                key={digit} 
+                className="aspect-square rounded-full bg-blue-50 flex flex-col items-center justify-center"
+              >
+                <span className="text-2xl font-medium text-zippcall-blue">
+                  {digit}
+                </span>
+                <span className="text-[10px] text-blue-400 mt-[-2px]">
+                  {digit === 0 ? '+' : 
+                   digit === 7 ? 'PQRS' : 
+                   digit === 8 ? 'TUV' : 
+                   digit === 9 ? 'WXYZ' :
+                   digit === 2 ? 'ABC' :
+                   digit === 3 ? 'DEF' :
+                   digit === 4 ? 'GHI' :
+                   digit === 5 ? 'JKL' :
+                   digit === 6 ? 'MNO' : ''}
+                </span>
+              </button>
+            ))}
+          </div>
+          
+          {/* Rate & Call Button */}
+          <div className="mt-auto">
+            <div className="text-center mb-4 text-gray-700">
+              Rate: <span className="font-medium">${currentRate?.toFixed(4)}</span> / min
+            </div>
+            <button className="w-full py-3 bg-green-500 text-white rounded-lg flex items-center justify-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              Call
+            </button>
+          </div>
+        </div>
+        
+        {/* For desktop, show balance on the side */}
+        {!isPhoneVersion && (
+          <div className="absolute right-[-230px] top-0 w-[220px] bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
+            <h3 className="text-lg font-medium mb-3">Balance</h3>
+            <div className="bg-blue-50 rounded-lg p-4 text-center">
+              <div className="text-sm text-gray-600 mb-1">Available Balance</div>
+              <div className="text-3xl font-bold text-zippcall-blue">$9.70</div>
+            </div>
+            <button className="w-full bg-blue-500 text-white rounded-lg py-2 mt-3">
+              Add Funds
+            </button>
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  // Render the pricing calculator UI
+  const renderCalculator = () => {
+    return (
+      <div className="bg-gray-50 p-4 rounded-2xl shadow-md">
+        <h3 className="text-lg font-semibold text-zippcall-blue mb-4">
+          Where do you want to call?
+        </h3>
+        
+        {/* Country Selector Dropdown */}
+        <div className="mb-4 relative" ref={dropdownRef}>
+          <label className="text-sm text-gray-500 block mb-1">
+            Destination Country:
+          </label>
+          
+          <button 
+            onClick={() => { 
+              setShowDropdown(!showDropdown);
+              handleFirstInteraction();
+            }}
+            className="flex items-center justify-between w-full px-3 py-2 bg-white border border-gray-200 rounded-lg text-base relative overflow-hidden group"
+          >
+            <div className="flex items-center">
+              {currentSelectedCountry?.flag && (
+                <span className="mr-2 text-xl">
+                  {currentSelectedCountry.flag}
+                </span>
+              )}
+              <span>{selectedCountryName}</span>
+            </div>
+            <div className="flex items-center">
+              <span className="text-sm text-zippcall-blue mr-1">
+                Click to select
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            
+            {/* Add ripple effect on hover */}
+            <div className="absolute inset-0 w-full h-full scale-0 transition-all duration-300 group-hover:scale-100 group-hover:bg-zippcall-blue/5"></div>
+          </button>
+          
+          {/* Dropdown menu */}
+          {showDropdown && (
+            <div className="absolute mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg z-50 max-h-[300px] overflow-y-auto">
+              {/* Search box */}
+              <div className="sticky top-0 p-2 bg-white border-b border-gray-100 z-10">
+                <input
+                  type="text"
+                  placeholder="Search countries..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full px-2 py-1 text-sm border border-gray-200 rounded"
+                />
+              </div>
+              
+              {/* Country list */}
+              <div className="p-1">
+                {isLoading ? (
+                  <div className="flex justify-center py-2">
+                    <svg className="animate-spin h-5 w-5 text-zippcall-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                  </div>
+                ) : filteredCountries.length === 0 ? (
+                  <div className="text-sm text-gray-500 text-center py-2">No countries found</div>
+                ) : (
+                  <>
+                    <div className="text-sm text-gray-500 text-center pb-1">{filteredCountries.length} countries available</div>
+                    {filteredCountries.map(country => (
+                      <button
+                        key={country.code}
+                        onClick={() => handleCountrySelect(country.name)}
+                        className={`flex items-center w-full px-3 py-2 text-sm ${
+                          selectedCountryName === country.name 
+                            ? "bg-zippcall-blue/10 text-zippcall-blue" 
+                            : "hover:bg-gray-50"
+                        } rounded-lg`}
+                      >
+                        {country.flag && <span className="mr-2">{country.flag}</span>}
+                        {country.name}
+                      </button>
+                    ))}
+                  </>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
+        
+        {/* Price Information */}
+        <div className="mb-3 bg-white p-2 rounded-lg border border-gray-200 text-center">
+          {isLoading ? (
+            <span className="text-sm text-gray-500">Loading rates...</span>
+          ) : isUnsupportedCountry ? (
+            <span className="text-sm text-orange-500">Sorry, calls to {selectedCountryName} are not supported yet.</span>
+          ) : (
+            <div>
+              <span className="text-sm text-gray-500 block">Rate:</span>
+              <span className="text-zippcall-blue font-medium text-lg">${currentRate?.toFixed(2)}/min</span>
+            </div>
+          )}
+        </div>
+        
+        {/* Minutes Selector */}
+        <div className="mb-5">
+          <div className="flex justify-between items-center mb-1">
+            <label className="text-sm text-gray-500">Minutes: {minutes}</label>
+            <span className="text-sm font-medium text-zippcall-blue">
+              {isLoading ? "Loading..." : isUnsupportedCountry ? "-" : `$${calculatedCost}`}
+            </span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <button 
+              onClick={() => handleMinutesChange(Math.max(1, minutes - 1))}
+              className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50"
+            >-</button>
+            <input
+              type="range"
+              min="1"
+              max="30"
+              value={minutes}
+              onChange={(e) => handleMinutesChange(Number(e.target.value))}
+              className="flex-1 range range-primary h-2 bg-zippcall-light-blue/20 accent-zippcall-blue rounded-lg"
+            />
+            <button 
+              onClick={() => handleMinutesChange(Math.min(30, minutes + 1))}
+              className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50"
+            >+</button>
+          </div>
+        </div>
+        
+        {/* Call Button */}
+        <Link 
+          href="https://app.zippcall.com" 
+          className="w-full btn bg-zippcall-blue text-white hover:bg-zippcall-blue/80 flex items-center justify-center rounded-lg relative overflow-hidden group py-0 h-14"
+          onClick={handleFirstInteraction}
+        >
+          {/* Using absolute positioning to ensure perfect centering */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <span className="text-lg font-medium">START CALLING NOW</span>
+          </div>
+          
+          {/* Add ripple effect */}
+          <div className="absolute inset-0 w-full h-full scale-0 transition-all duration-300 group-hover:scale-100 group-hover:bg-white/10"></div>
+        </Link>
+      </div>
+    );
   };
 
   return (
     <section className="bg-gradient-to-b from-zippcall-light-blue/10 to-white py-16 md:py-24 relative overflow-hidden">
-      {/* Mobile Product Hunt Badge */}
-      <div className="md:hidden absolute top-2 right-2 z-10">
-        <a 
-          href="https://www.producthunt.com/posts/zippcall?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-zippcall" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="block rotate-6 shadow-lg rounded-lg overflow-hidden hover:rotate-0 transition-all duration-300"
-        >
-          <img 
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=949544&theme=light&t=1743815067332" 
-            alt="ZippCall on Product Hunt" 
-            className="w-36 h-auto" 
-          />
-        </a>
-      </div>
-      
       <div className="container mx-auto px-4">
         {/* Centered Content Layout */}
         <div className="max-w-3xl mx-auto text-center mb-12">
@@ -223,187 +488,92 @@ export default function Hero() {
             Call landlines and mobiles <span className="text-zippcall-light-blue">anywhere in the world</span> at <span className="text-zippcall-light-blue">great low rates.</span>
           </h1>
           <p className="text-lg text-zippcall-neutral mb-8">
-            Cheap international calls directly from your Browser. No downloads, no hassle. <span className="font-medium text-zippcall-blue">Check your rate and make a call instantly below!</span>
+            Cheap international calls to family, friends, and businesses in over 200 countries worldwide. Call directly from your browser with no downloads, subscriptions, or hidden fees.
           </p>
         </div>
 
-        {/* Centered Phone Mockup Area */}
-        <div className="relative">
-          {/* Phone UI with Pricing Calculator - Apply pulse-glow animation */}
-          <div 
-            className={`relative mx-auto ${isPhoneBouncing ? 'animate-bounce-subtle animate-pulse-glow' : ''}`}
-            style={{ maxWidth: "320px" }}
-          >
-            {/* Phone Frame */}
-            <div className="bg-gray-900 rounded-[40px] p-3 shadow-2xl border-4 border-gray-800">
-              {/* Screen */}
-              <div className="bg-white rounded-[32px] overflow-hidden h-[550px] relative">
-                {/* App Content */}
-                <div className="p-5">
-                  {/* App Header */}
-                  <div className="flex justify-between items-center mb-6">
-                    <div className="flex items-center">
-                      <Image 
-                        src="/images/zippcall-icon.png" 
-                        alt="ZippCall" 
-                        width={28} 
-                        height={28} 
+        {/* Two-column Layout: Hero Image + Calculator */}
+        <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-12 max-w-6xl mx-auto">
+          {/* Left side: Hero Image */}
+          <div className="lg:w-1/2 flex justify-center mb-12 lg:mb-0 relative">
+            <div className="relative w-full">
+              <Image
+                src="/images/hero-cropped.svg"
+                alt="ZippCall on multiple devices"
+                width={650}
+                height={650}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
+          </div>
+          
+          {/* Right side: Calculator */}
+          <div className="lg:w-1/2">
+            <div className="bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
+              <h2 className="text-2xl font-bold text-zippcall-blue mb-4">Try it now</h2>
+              <p className="text-zippcall-neutral mb-6">Check your rate and start calling in seconds</p>
+              
+              {/* Calculator for interaction */}
+              {renderCalculator()}
+              
+              {/* Mobile dropdown (fixed position) */}
+              {showDropdown && (
+                <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => setShowDropdown(false)}>
+                  <div className="bg-white rounded-xl w-full max-w-md max-h-[80vh] overflow-hidden" onClick={(e) => e.stopPropagation()}>
+                    <div className="p-4 border-b border-gray-100 flex justify-between items-center">
+                      <h3 className="font-medium">Select Country</h3>
+                      <button onClick={() => setShowDropdown(false)} className="text-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div className="p-4 border-b border-gray-100">
+                      <input
+                        type="text"
+                        placeholder="Search countries..."
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        className="w-full px-3 py-2 border border-gray-200 rounded-lg"
                       />
                     </div>
-                    <div className="text-xs text-zippcall-blue font-medium">
-                      Balance: $10.00
-                    </div>
-                  </div>
-                  
-                  {/* Calculator */}
-                  <div className="bg-gray-50 p-4 rounded-xl shadow-inner mb-5">
-                    <h3 className="text-sm font-semibold text-zippcall-blue mb-4">Where do you want to call?</h3>
-                    
-                    {/* Country Selector Dropdown */}
-                    <div className="mb-4 relative" ref={dropdownRef}>
-                      <label className="text-xs text-gray-500 block mb-1">Destination Country:</label>
-                      
-                      {/* Selected country button - add pulse animation */}
-                      <button 
-                        onClick={() => { 
-                          setShowDropdown(!showDropdown);
-                          handleFirstInteraction();
-                        }}
-                        className="flex items-center justify-between w-full px-3 py-2 bg-white border border-gray-200 rounded-lg text-sm relative overflow-hidden group"
-                      >
-                        <div className="flex items-center">
-                          {currentSelectedCountry?.flag && (
-                            <span className="mr-2 text-base">{currentSelectedCountry.flag}</span>
-                          )}
-                          <span>{selectedCountryName}</span>
-                        </div>
-                        <div className="flex items-center">
-                          <span className={`text-xs text-zippcall-blue mr-1 ${isPhoneBouncing ? 'animate-pulse' : ''}`}>
-                            Click to select
-                          </span>
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    <div className="overflow-y-auto max-h-[50vh] p-2">
+                      {isLoading ? (
+                        <div className="flex justify-center py-4">
+                          <svg className="animate-spin h-6 w-6 text-zippcall-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                           </svg>
                         </div>
-                        
-                        {/* Add ripple effect on hover */}
-                        <div className="absolute inset-0 w-full h-full scale-0 transition-all duration-300 group-hover:scale-100 group-hover:bg-zippcall-blue/5"></div>
-                      </button>
-                      
-                      {/* Dropdown menu */}
-                      {showDropdown && (
-                        <div className="absolute mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg z-50 max-h-[300px] overflow-y-auto">
-                          {/* Search box */}
-                          <div className="sticky top-0 p-2 bg-white border-b border-gray-100 z-10">
-                            <input
-                              type="text"
-                              placeholder="Search countries..."
-                              value={searchTerm}
-                              onChange={(e) => setSearchTerm(e.target.value)}
-                              className="w-full px-2 py-1 text-xs border border-gray-200 rounded"
-                            />
-                          </div>
-                          
-                          {/* Country list */}
-                          <div className="p-1">
-                            {isLoading ? (
-                              <div className="flex justify-center py-2">
-                                <svg className="animate-spin h-4 w-4 text-zippcall-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                </svg>
-                              </div>
-                            ) : filteredCountries.length === 0 ? (
-                              <div className="text-xs text-gray-500 text-center py-2">No countries found</div>
-                            ) : (
-                              <>
-                                <div className="text-xs text-gray-500 text-center pb-1">{filteredCountries.length} countries available</div>
-                                {filteredCountries.map(country => (
-                                  <button
-                                    key={country.code}
-                                    onClick={() => handleCountrySelect(country.name)}
-                                    className={`flex items-center w-full px-3 py-2 text-xs ${
-                                      selectedCountryName === country.name 
-                                        ? "bg-zippcall-blue/10 text-zippcall-blue" 
-                                        : "hover:bg-gray-50"
-                                    } rounded-lg`}
-                                  >
-                                    {country.flag && <span className="mr-2">{country.flag}</span>}
-                                    {country.name}
-                                  </button>
-                                ))}
-                              </>
-                            )}
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                    
-                    {/* Price Information */}
-                    <div className="mb-3 bg-white p-2 rounded-lg border border-gray-200 text-center">
-                      {isLoading ? (
-                        <span className="text-xs text-gray-500">Loading rates...</span>
-                      ) : isUnsupportedCountry ? (
-                        <span className="text-xs text-orange-500">Sorry, calls to {selectedCountryName} are not supported yet.</span>
+                      ) : filteredCountries.length === 0 ? (
+                        <div className="text-gray-500 text-center py-4">No countries found</div>
                       ) : (
-                        <div>
-                          <span className="text-xs text-gray-500 block">Rate:</span>
-                          <span className="text-zippcall-blue font-medium">${currentRate?.toFixed(4)}/min</span>
-                        </div>
+                        <>
+                          <div className="text-sm text-gray-500 text-center pb-2">
+                            {filteredCountries.length} countries available
+                          </div>
+                          {filteredCountries.map(country => (
+                            <button
+                              key={country.code}
+                              onClick={() => handleCountrySelect(country.name)}
+                              className={`flex items-center w-full px-3 py-3 ${
+                                selectedCountryName === country.name 
+                                  ? "bg-zippcall-blue/10 text-zippcall-blue" 
+                                  : "hover:bg-gray-50"
+                              } rounded-lg mb-1`}
+                            >
+                              {country.flag && <span className="mr-2 text-xl">{country.flag}</span>}
+                              {country.name}
+                            </button>
+                          ))}
+                        </>
                       )}
                     </div>
-                    
-                    {/* Minutes Selector */}
-                    <div className="mb-5">
-                      <div className="flex justify-between items-center mb-1">
-                        <label className="text-xs text-gray-500">Minutes: {minutes}</label>
-                        <span className="text-xs font-medium text-zippcall-blue">
-                          {isLoading ? "Loading..." : isUnsupportedCountry ? "-" : `$${calculatedCost}`}
-                        </span>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <button 
-                          onClick={() => handleMinutesChange(Math.max(1, minutes - 1))}
-                          className="w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center"
-                        >-</button>
-                        <input
-                          type="range"
-                          min="1"
-                          max="30"
-                          value={minutes}
-                          onChange={(e) => handleMinutesChange(Number(e.target.value))}
-                          className="flex-1 range range-primary h-2 bg-zippcall-light-blue/20 accent-zippcall-blue rounded-lg"
-                        />
-                        <button 
-                          onClick={() => handleMinutesChange(Math.min(30, minutes + 1))}
-                          className="w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center"
-                        >+</button>
-                      </div>
-                    </div>
-                    
-                    {/* Call Button - Restore this */}
-                    <Link 
-                      href="https://app.zippcall.com" 
-                      className="w-full btn bg-zippcall-blue text-white hover:bg-zippcall-blue/80 flex items-center justify-center gap-2 py-3 rounded-lg relative overflow-hidden group"
-                      onClick={handleFirstInteraction}
-                    >
-                      <div className={`flex items-center justify-center gap-2 ${isPhoneBouncing ? 'animate-wobble' : ''}`}>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        Start Calling Now
-                      </div>
-                      
-                      {/* Add ripple effect */}
-                      <div className="absolute inset-0 w-full h-full scale-0 transition-all duration-300 group-hover:scale-100 group-hover:bg-white/10"></div>
-                    </Link>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
-            
-            {/* Phone Bottom */}
-            <div className="bg-gray-800 h-1 w-24 rounded-full mx-auto mt-2"></div>
           </div>
         </div>
       </div>
