@@ -51,7 +51,7 @@ interface PricingDataEntry {
 
 // Simplified pricing calculator for the hero section
 export default function Hero() {
-  const [selectedCountryName, setSelectedCountryName] = useState("United Kingdom");
+  const [selectedCountryName, setSelectedCountryName] = useState("United States");
   const [currentRate, setCurrentRate] = useState<number | null>(0.15);
   const [isLoading, setIsLoading] = useState(true);
   const [isUnsupportedCountry, setIsUnsupportedCountry] = useState(false);

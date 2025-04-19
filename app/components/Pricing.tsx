@@ -90,7 +90,7 @@ interface PricingDataEntry {
 }
 
 export default function Pricing() {
-  const [selectedCountryName, setSelectedCountryName] = useState("United Kingdom");
+  const [selectedCountryName, setSelectedCountryName] = useState("United States");
   const [minutes, setMinutes] = useState(10);
   const [currentRate, setCurrentRate] = useState<number | null>(null);
   const [calculatedCost, setCalculatedCost] = useState<string | null>(null);
