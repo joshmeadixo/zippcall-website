@@ -120,6 +120,7 @@ export default function Hero() {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setShowDropdown(false);
+        setSearchTerm("");
       }
     };
     
@@ -145,7 +146,10 @@ export default function Hero() {
     
     // Find country code
     const selectedCountry = countryListForDropdown.find(c => c.name === countryName);
-    if (!selectedCountry) return;
+    if (!selectedCountry) {
+      console.error("Country not found:", countryName);
+      return;
+    }
     
     // Get rate from pricing data
     if (data && selectedCountry.code) {
@@ -155,11 +159,13 @@ export default function Hero() {
         const finalRate = Math.max(markupRate, 0.15);
         setCurrentRate(finalRate);
         setCalculatedCost((finalRate * minutes).toFixed(2));
+        console.log("Rate updated for", countryName, "to", finalRate);
         return;
       }
     }
     
     // Fallback to default rate
+    console.log("Using fallback rate for", countryName);
     setCurrentRate(0.15);
     setCalculatedCost((0.15 * minutes).toFixed(2));
   };
@@ -369,50 +375,70 @@ export default function Hero() {
           
           {/* Dropdown menu */}
           {showDropdown && (
-            <div className="absolute mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg z-50 max-h-[300px] overflow-y-auto">
-              {/* Search box */}
-              <div className="sticky top-0 p-2 bg-white border-b border-gray-100 z-10">
-                <input
-                  type="text"
-                  placeholder="Search countries..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full px-2 py-1 text-sm border border-gray-200 rounded"
-                />
-              </div>
+            <>
+              {/* Backdrop on mobile only */}
+              <div className="fixed inset-0 bg-black/50 z-[90] lg:hidden" onClick={() => setShowDropdown(false)}></div>
               
-              {/* Country list */}
-              <div className="p-1">
-                {isLoading ? (
-                  <div className="flex justify-center py-2">
-                    <svg className="animate-spin h-5 w-5 text-zippcall-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              {/* Dropdown */}
+              <div className="fixed left-4 right-4 top-1/4 lg:absolute lg:left-auto lg:right-auto lg:top-auto lg:mt-1 lg:w-full bg-white border border-gray-200 rounded-lg shadow-lg z-[100] overflow-hidden max-h-[50vh] lg:max-h-[300px]">
+                {/* Close button for mobile only */}
+                <div className="sticky top-0 flex items-center justify-between bg-white border-b border-gray-100 p-2 lg:hidden">
+                  <span className="text-sm font-medium">Select Country</span>
+                  <button 
+                    onClick={() => setShowDropdown(false)}
+                    className="text-gray-500 p-1"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
-                  </div>
-                ) : filteredCountries.length === 0 ? (
-                  <div className="text-sm text-gray-500 text-center py-2">No countries found</div>
-                ) : (
-                  <>
-                    <div className="text-sm text-gray-500 text-center pb-1">{filteredCountries.length} countries available</div>
-                    {filteredCountries.map(country => (
-                      <button
-                        key={country.code}
-                        onClick={() => handleCountrySelect(country.name)}
-                        className={`flex items-center w-full px-3 py-2 text-sm ${
-                          selectedCountryName === country.name 
-                            ? "bg-zippcall-blue/10 text-zippcall-blue" 
-                            : "hover:bg-gray-50"
-                        } rounded-lg`}
-                      >
-                        {country.flag && <span className="mr-2">{country.flag}</span>}
-                        {country.name}
-                      </button>
-                    ))}
-                  </>
-                )}
+                  </button>
+                </div>
+                
+                {/* Search box */}
+                <div className="sticky top-0 lg:top-0 p-2 bg-white border-b border-gray-100 z-10">
+                  <input
+                    type="text"
+                    placeholder="Search countries..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    className="w-full px-2 py-1 text-sm border border-gray-200 rounded"
+                    autoFocus
+                  />
+                </div>
+                
+                {/* Country list */}
+                <div className="p-1 overflow-y-auto" style={{ maxHeight: 'calc(50vh - 110px)' }}>
+                  {isLoading ? (
+                    <div className="flex justify-center py-2">
+                      <svg className="animate-spin h-5 w-5 text-zippcall-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                    </div>
+                  ) : filteredCountries.length === 0 ? (
+                    <div className="text-sm text-gray-500 text-center py-2">No countries found</div>
+                  ) : (
+                    <>
+                      <div className="text-sm text-gray-500 text-center pb-1">{filteredCountries.length} countries available</div>
+                      {filteredCountries.map(country => (
+                        <button
+                          key={country.code}
+                          onClick={() => handleCountrySelect(country.name)}
+                          className={`flex items-center w-full px-3 py-2 text-sm ${
+                            selectedCountryName === country.name 
+                              ? "bg-zippcall-blue/10 text-zippcall-blue" 
+                              : "hover:bg-gray-50"
+                          } rounded-lg`}
+                        >
+                          {country.flag && <span className="mr-2">{country.flag}</span>}
+                          {country.name}
+                        </button>
+                      ))}
+                    </>
+                  )}
+                </div>
               </div>
-            </div>
+            </>
           )}
         </div>
         
@@ -467,7 +493,7 @@ export default function Hero() {
           {/* Using absolute positioning to ensure perfect centering */}
           <div className="absolute inset-0 flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.54 1.06l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
             <span className="text-lg font-medium">START CALLING NOW</span>
           </div>
@@ -516,63 +542,6 @@ export default function Hero() {
               
               {/* Calculator for interaction */}
               {renderCalculator()}
-              
-              {/* Mobile dropdown (fixed position) */}
-              {showDropdown && (
-                <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => setShowDropdown(false)}>
-                  <div className="bg-white rounded-xl w-full max-w-md max-h-[80vh] overflow-hidden" onClick={(e) => e.stopPropagation()}>
-                    <div className="p-4 border-b border-gray-100 flex justify-between items-center">
-                      <h3 className="font-medium">Select Country</h3>
-                      <button onClick={() => setShowDropdown(false)} className="text-gray-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                      </button>
-                    </div>
-                    <div className="p-4 border-b border-gray-100">
-                      <input
-                        type="text"
-                        placeholder="Search countries..."
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                        className="w-full px-3 py-2 border border-gray-200 rounded-lg"
-                      />
-                    </div>
-                    <div className="overflow-y-auto max-h-[50vh] p-2">
-                      {isLoading ? (
-                        <div className="flex justify-center py-4">
-                          <svg className="animate-spin h-6 w-6 text-zippcall-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                          </svg>
-                        </div>
-                      ) : filteredCountries.length === 0 ? (
-                        <div className="text-gray-500 text-center py-4">No countries found</div>
-                      ) : (
-                        <>
-                          <div className="text-sm text-gray-500 text-center pb-2">
-                            {filteredCountries.length} countries available
-                          </div>
-                          {filteredCountries.map(country => (
-                            <button
-                              key={country.code}
-                              onClick={() => handleCountrySelect(country.name)}
-                              className={`flex items-center w-full px-3 py-3 ${
-                                selectedCountryName === country.name 
-                                  ? "bg-zippcall-blue/10 text-zippcall-blue" 
-                                  : "hover:bg-gray-50"
-                              } rounded-lg mb-1`}
-                            >
-                              {country.flag && <span className="mr-2 text-xl">{country.flag}</span>}
-                              {country.name}
-                            </button>
-                          ))}
-                        </>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              )}
             </div>
           </div>
         </div>
