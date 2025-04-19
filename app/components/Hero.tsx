@@ -438,7 +438,7 @@ export default function Hero() {
           ) : (
             <div>
               <span className="text-sm text-gray-600 block mb-1">Rate to {selectedCountryName}:</span>
-              <span className="text-2xl font-bold text-zippcall-blue">${currentRate?.toFixed(4)}</span>
+              <span className="text-2xl font-bold text-zippcall-blue">${currentRate?.toFixed(2)}</span>
               <span className="text-sm text-gray-600 ml-1">per min</span>
             </div>
           )}
